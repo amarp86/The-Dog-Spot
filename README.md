@@ -46,5 +46,11 @@ App Overview:
 
 
 MVP Board:
+[MVP Board](https://github.com/amarp86/The-Dog-Spot/projects/1)
+
+Post MVP: 
+1. Email System for Adopter
+2. External API call for Dog Breed Facts based on string matching Dog Breed Schema.
+3. Add multiple user roles - allow CRUD access depending on user role.
 
 
