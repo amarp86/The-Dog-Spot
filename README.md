@@ -30,7 +30,7 @@ const Dog = new Schema(
 
 ```
 
-Whimsical: 
+Front-End Structure: 
 ![Whimsical Diagram](https://github.com/amarp86/The-Dog-Spot/blob/dev/Screen%20Shot%202021-03-08%20at%201.57.32%20PM.png)
 
 
