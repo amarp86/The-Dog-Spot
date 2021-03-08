@@ -19,7 +19,9 @@ const Dog = new Schema(
     age: { type: Number, required: true },
     imgURL: [{ type: String, required: true }],
     location: { type: String, required: true },
-    description: { type: String, required: true }
+    description: { type: String, required: true },
+    status: { type: Boolean, required: true }
+    
     
   },
   { timestamps: true }
@@ -34,4 +36,15 @@ Whimsical:
 
 Team Expectations:
 [Google Doc Link](https://docs.google.com/document/d/e/2PACX-1vRJvBFhamLdhd8FuCzWC0053Q8ADoPnr4qJiDSAVrL8B2Awl28F5DWS5smkcC5bglCkZc4lsrpLuKSA/pub)
+
+
+App Overview:
+1. Web App for local animal shelters to list available dogs that are seeking permanent homes.
+2. Web App will display all necessary imformation about each dog.
+3. App will allow logged in users to edit listed dogs and mark them as adopted or avaialble.
+4. App will utlilize soft-delete to trigger a flag change for dog status(adopted/available - true/false).
+
+
+MVP Board:
+
 
