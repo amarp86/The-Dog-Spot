@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./screens/Home/Home";
+import Layout from "./components/shared/Layout/Layout";
 
 import Dogs from "./screens/Dogs/Dogs";
 import DogCreate from "./screens/DogCreate/DogCreate";
@@ -27,34 +28,36 @@ const App = () => {
   const clearUser = () => setUser(null);
 
   return (
-    <div className="app">
-      <Switch>
-        <Route exact path="/">
-          <Home user={user} />
-        </Route>
-        <Route path="/sign-up">
-          <SignUp setUser={setUser} />
-        </Route>
-        <Route path="/sign-in">
-          <SignIn setUser={setUser} />
-        </Route>
-        <Route path="/sign-out">
-          <SignOut setUser={setUser} clearUser={clearUser} />
-        </Route>
-        <Route exact path="/dogs">
-          <Dogs user={user} />
-        </Route>
-        <Route path="/add-dog">
-          {user ? <DogCreate user={user} /> : <Redirect to="/sign-up" />}
-        </Route>
-        <Route exact path="/dogs/:id/edit">
-          {user ? <DogEdit user={user} /> : <Redirect to="/" />}
-        </Route>
-        <Route exact path="/dogs/:id">
-          <DogDetail user={user} />
-        </Route>
-      </Switch>
-    </div>
+    <Layout user={user}>
+      <div className="app">
+        <Switch>
+          <Route exact path="/">
+            <Home user={user} />
+          </Route>
+          <Route path="/sign-up">
+            <SignUp setUser={setUser} />
+          </Route>
+          <Route path="/sign-in">
+            <SignIn setUser={setUser} />
+          </Route>
+          <Route path="/sign-out">
+            <SignOut setUser={setUser} clearUser={clearUser} />
+          </Route>
+          <Route exact path="/dogs">
+            <Dogs user={user} />
+          </Route>
+          <Route path="/add-dog">
+            {user ? <DogCreate user={user} /> : <Redirect to="/sign-up" />}
+          </Route>
+          <Route exact path="/dogs/:id/edit">
+            {user ? <DogEdit user={user} /> : <Redirect to="/" />}
+          </Route>
+          <Route exact path="/dogs/:id">
+            <DogDetail user={user} />
+          </Route>
+        </Switch>
+      </div>
+    </Layout>
   );
 };
 
