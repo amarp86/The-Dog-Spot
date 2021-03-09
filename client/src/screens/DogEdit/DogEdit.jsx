@@ -97,7 +97,7 @@ const DogEdit = (props) => {
           onChange={handleChange}
         />
         <button type="submit" className="save-button">
-          Save
+          Fetch
         </button>
       </form>
     </div>

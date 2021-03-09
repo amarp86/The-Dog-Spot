@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { getDog } from "../../services/dogs.js";
+import { getDog, updateDog, deleteDog } from "../../services/dogs.js";
 import "./DogDetail.css";
 
 function DogDetail(props) {
   const [dog, setDog] = useState([]);
   const { id } = useParams();
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isAdopted, setIsAdopted] = useState(false);
-  let status = "";
+
+  const params = useParams();
+  const [isUpdated, setUpdated] = useState(false);
 
   useEffect(() => {
     const fetchDogs = async () => {
@@ -17,20 +18,19 @@ function DogDetail(props) {
       setIsLoaded(true);
     };
     fetchDogs();
-  }, [id]);
+  }, [id, isUpdated]);
 
   if (!isLoaded) {
     return <h1>Fetching...</h1>;
   }
 
-  if (isAdopted === false) {
-    status = `${dog.name} is looking for a forever home`;
-  } else {
-    status = `${dog.name} has a forever home`;
-  }
-  const handleAdopt = (e) => {
+  const handleAdopt = async (e) => {
     e.preventDefault();
-    setIsAdopted(!isAdopted);
+
+    let id = params.id;
+    // dog.isAdopted = !isAdopted;
+    await deleteDog(id);
+    setUpdated(!isUpdated);
   };
 
   return (
@@ -40,7 +40,7 @@ function DogDetail(props) {
       <div className="dog-age">{dog.age}</div>
       <div className="dog-location">{dog.location}</div>
       <div className="dog-description">{dog.description}</div>
-      <div className="adopted-status">{status}</div>
+      <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
       <button onClick={handleAdopt}>Adopt Me</button>
       <button>
         <Link className="edit-link" to={`/dogs/${dog._id}/edit`}>
