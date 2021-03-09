@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./SignIn.css";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
-import Layout from "../../components/shared/Layout/Layout";
 
 const SignIn = (props) => {
   const history = useHistory();
@@ -59,41 +58,39 @@ const SignIn = (props) => {
   const { name, password, email } = form;
 
   return (
-    <Layout>
-      <div className="form-container">
-        <h3>Sign In</h3>
-        <form onSubmit={onSignIn}>
-          <label>Name</label>
-          <input
-            required
-            type="text"
-            name="name"
-            value={name}
-            placeholder="Enter Name"
-            onChange={handleChange}
-          />
-          <label>E-Mail</label>
-          <input
-            required
-            name="email"
-            value={email}
-            type="text"
-            placeholder="E-Mail Address"
-            onChange={handleChange}
-          />
-          <label>Password</label>
-          <input
-            required
-            name="password"
-            value={password}
-            type="password"
-            placeholder="Password"
-            onChange={handleChange}
-          />
-          {renderError()}
-        </form>
-      </div>
-    </Layout>
+    <div className="form-container">
+      <h3>Sign In</h3>
+      <form onSubmit={onSignIn}>
+        <label>Name</label>
+        <input
+          required
+          type="text"
+          name="name"
+          value={name}
+          placeholder="Enter Name"
+          onChange={handleChange}
+        />
+        <label>E-Mail</label>
+        <input
+          required
+          name="email"
+          value={email}
+          type="text"
+          placeholder="E-Mail Address"
+          onChange={handleChange}
+        />
+        <label>Password</label>
+        <input
+          required
+          name="password"
+          value={password}
+          type="password"
+          placeholder="Password"
+          onChange={handleChange}
+        />
+        {renderError()}
+      </form>
+    </div>
   );
 };
 
