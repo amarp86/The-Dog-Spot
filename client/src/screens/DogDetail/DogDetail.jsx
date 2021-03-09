@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { getDog } from "../../services/dogs.js";
+import "./DogDetail.css";
 
 function DogDetail(props) {
   const [dog, setDog] = useState([]);
@@ -19,7 +20,7 @@ function DogDetail(props) {
   }, [id]);
 
   if (!isLoaded) {
-    return <h1>Loading...</h1>;
+    return <h1>Fetching...</h1>;
   }
 
   if (isAdopted === false) {
@@ -41,7 +42,11 @@ function DogDetail(props) {
       <div className="dog-description">{dog.description}</div>
       <div className="adopted-status">{status}</div>
       <button onClick={handleAdopt}>Adopt Me</button>
-      <button>Edit Me</button>
+      <button>
+        <Link className="edit-link" to={`/dogs/${dog._id}/edit`}>
+          Edit
+        </Link>
+      </button>
     </div>
   );
 }
