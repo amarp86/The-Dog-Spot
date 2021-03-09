@@ -14,6 +14,7 @@ const DogEdit = (props) => {
   });
 
   const [isUpdated, setUpdated] = useState(false);
+  const params = useParams();
   let { id } = useParams();
 
   useEffect(() => {
@@ -34,13 +35,13 @@ const DogEdit = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    let { id } = props.match.params;
+    let id = params.id;
     const updated = await updateDog(id, dog);
     setUpdated(updated);
   };
 
   if (isUpdated) {
-    return <Redirect to={`/dogs/${props.match.params.id}`} />;
+    return <Redirect to={`/dogs/${params.id}`} />;
   }
 
   return (
