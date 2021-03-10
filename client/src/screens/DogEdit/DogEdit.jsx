@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 import { useParams, Redirect } from "react-router-dom";
 
 import { getDog, updateDog } from "../../services/dogs";
 
 const DogEdit = (props) => {
+  const [allBreeds, setAllBreeds] = useState([]);
   const [dog, setDog] = useState({
     name: "",
     age: "",
@@ -23,6 +25,13 @@ const DogEdit = (props) => {
       const dog = await getDog(id);
       setDog(dog);
     };
+    const fetchBreed = async () => {
+      const resp = await axios.get(
+        `https://api-dog-breeds.herokuapp.com/api/dogs`
+      );
+      setAllBreeds(resp.data);
+    };
+    fetchBreed();
     fetchDog();
   }, [id]);
 
@@ -90,15 +99,17 @@ const DogEdit = (props) => {
           required
           onChange={handleChange}
         />
-        <input
-          className="input-breed"
-          type="text"
-          placeholder="breed of dog"
+        <select
+          className="breed-select"
           value={dog.breed}
           name="breed"
           required
           onChange={handleChange}
-        />
+        >
+          {allBreeds.map((dog, index) => (
+            <option key={index}>{dog.breedName}</option>
+          ))}
+        </select>
         <input
           className="input-location"
           type="text"
