@@ -14,6 +14,7 @@ import SignUp from "./screens/SignUp/SignUp";
 import SignIn from "./screens/SignIn/SignIn";
 import SignOut from "./screens/SignOut/SignOut";
 import About from "./screens/About/About";
+import Donate from "./screens/Donate/Donate";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -58,6 +59,9 @@ const App = () => {
           </Route>
           <Route exact path="/about">
             <About user={user} />
+          </Route>
+          <Route exact path="/donate">
+            <Donate user={user} />
           </Route>
         </Switch>
       </div>
