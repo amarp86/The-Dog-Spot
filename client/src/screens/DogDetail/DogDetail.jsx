@@ -26,8 +26,11 @@ function DogDetail(props) {
       let matchedDog = resp.data.find((apiDog) =>
         apiDog.breedName.includes(dog.breed)
       );
-
-      setBreedInfo(matchedDog.description);
+      if (!matchedDog) {
+        setBreedInfo("No Information Available About This Breed");
+      } else {
+        setBreedInfo(matchedDog.description);
+      }
       setIsLoaded(true);
     };
     fetchDog();
