@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { getDog, updateDog, deleteDog } from "../../services/dogs.js";
+import { getDog, unAdoptDog, adoptDog } from "../../services/dogs.js";
 import "./DogDetail.css";
 
 function DogDetail(props) {
@@ -28,8 +28,15 @@ function DogDetail(props) {
     e.preventDefault();
 
     let id = params.id;
-    // dog.isAdopted = !isAdopted;
-    await deleteDog(id);
+
+    await adoptDog(id);
+    setUpdated(!isUpdated);
+  };
+  const handleUnAdopt = async (e) => {
+    e.preventDefault();
+    let id = params.id;
+
+    await unAdoptDog(id);
     setUpdated(!isUpdated);
   };
 
@@ -42,6 +49,7 @@ function DogDetail(props) {
       <div className="dog-description">{dog.description}</div>
       <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
       <button onClick={handleAdopt}>Adopt Me</button>
+      <button onClick={handleUnAdopt}>Return Me</button>
       <button>
         <Link className="edit-link" to={`/dogs/${dog._id}/edit`}>
           Edit
