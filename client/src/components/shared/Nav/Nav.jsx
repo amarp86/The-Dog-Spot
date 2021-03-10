@@ -1,6 +1,7 @@
 import React from "react";
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
+import About from "../../../screens/About/About";
 
 const authenticatedOptions = (
   <>
@@ -10,7 +11,7 @@ const authenticatedOptions = (
     <NavLink className="link" to="/sign-out">
       Sign Out
     </NavLink>
-  </>
+   </>
 );
 
 const unauthenticatedOptions = (
@@ -21,14 +22,17 @@ const unauthenticatedOptions = (
     <NavLink className="link" to="/sign-in">
       Sign In
     </NavLink>
+   
   </>
 );
 
 const alwaysOptions = (
   <>
     <NavLink className="link" to="/dogs">
-      Dogs
+        Dogs
     </NavLink>
+    <NavLink className="link" to="/about">
+    About Us  </NavLink>
   </>
 );
 
