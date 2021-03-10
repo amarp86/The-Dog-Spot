@@ -98,4 +98,5 @@ module.exports = {
   updateDog,
   adoptDog,
   unAdopt,
+  getAdoptedDogs,
 };
