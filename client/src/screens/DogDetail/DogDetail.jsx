@@ -22,13 +22,11 @@ function DogDetail(props) {
       const resp = await axios.get(
         `https://api-dog-breeds.herokuapp.com/api/search?q=${dog.breed}`
       );
-      console.log(resp);
+
       let matchedDog = resp.data.find((apiDog) =>
         apiDog.breedName.includes(dog.breed)
       );
-      // console.log(match);
-      // let index = resp.data.indexOf(match);
-      // console.log(index);
+
       setBreedInfo(matchedDog.description);
       setIsLoaded(true);
     };
