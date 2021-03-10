@@ -46,6 +46,7 @@ function DogDetail(props) {
       <div className="dog-name">{dog.name}</div>
       <div className="dog-age">{dog.age}</div>
       <div className="dog-location">{dog.location}</div>
+      <div className="dog-breed">{dog.breed}</div>
       <div className="dog-description">{dog.description}</div>
       <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
       <button onClick={handleAdopt}>Adopt Me</button>

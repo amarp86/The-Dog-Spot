@@ -11,6 +11,7 @@ const DogEdit = (props) => {
     images: "",
     location: "",
     description: "",
+    breed: "",
   });
 
   const [isUpdated, setUpdated] = useState(false);
@@ -84,6 +85,15 @@ const DogEdit = (props) => {
           placeholder="Description"
           value={dog.description}
           name="description"
+          required
+          onChange={handleChange}
+        />
+        <input
+          className="input-breed"
+          type="text"
+          placeholder="breed of dog"
+          value={dog.breed}
+          name="breed"
           required
           onChange={handleChange}
         />

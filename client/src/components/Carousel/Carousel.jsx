@@ -23,38 +23,6 @@ const Carousel = (props) => {
       <img src={dog.images} alt="dog" />
     </div>
   ));
-  // const items = [
-  //   <div className="item" data-value="1">
-  //     <img
-  //       src="https://images.unsplash.com/photo-1453365607868-7deed8cc7d26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-  //       alt="dog"
-  //     />
-  //   </div>,
-  //   <div className="item" data-value="2">
-  //     <img
-  //       src="https://images.unsplash.com/photo-1453365607868-7deed8cc7d26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-  //       alt="dog"
-  //     />
-  //   </div>,
-  //   <div className="item" data-value="3">
-  //     <img
-  //       src="https://images.unsplash.com/photo-1453365607868-7deed8cc7d26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-  //       alt="dog"
-  //     />
-  //   </div>,
-  //   <div className="item" data-value="4">
-  //     <img
-  //       src="https://images.unsplash.com/photo-1453365607868-7deed8cc7d26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-  //       alt="dog"
-  //     />
-  //   </div>,
-  //   <div className="item" data-value="5">
-  //     <img
-  //       src="https://images.unsplash.com/photo-1453365607868-7deed8cc7d26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-  //       alt="dog"
-  //     />
-  //   </div>,
-  // ];
 
   return (
     <div>
