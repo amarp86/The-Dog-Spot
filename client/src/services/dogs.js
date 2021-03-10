@@ -9,6 +9,15 @@ export const getDogs = async () => {
   }
 };
 
+export const getAdoptedDogs = async () => {
+  try {
+    const response = await api.get("/adopted-dogs");
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
 export const getDog = async (id) => {
   try {
     const response = await api.get(`/dogs/${id}`);
@@ -36,9 +45,18 @@ export const updateDog = async (id, dog) => {
   }
 };
 
-export const deleteDog = async (id) => {
+export const adoptDog = async (id) => {
   try {
-    const response = await api.delete(`/dogs/${id}`);
+    const response = await api.put(`/dogs/adopt/${id}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const unAdoptDog = async (id) => {
+  try {
+    const response = await api.put(`/dogs/unadopt/${id}`);
     return response.data;
   } catch (error) {
     throw error;

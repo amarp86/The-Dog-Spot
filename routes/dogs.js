@@ -7,8 +7,9 @@ const router = Router();
 router.get("/", controllers.getDogs);
 router.get("/:id", controllers.getDog);
 router.post("/", restrict, controllers.createDog);
-router.post("/", restrict, controllers.createDog);
+
 router.put("/:id", restrict, controllers.updateDog);
-router.delete("/:id", restrict, controllers.deleteDog);
+router.put("/adopt/:id", restrict, controllers.adoptDog);
+router.put("/unadopt/:id", restrict, controllers.unAdopt);
 
 module.exports = router;
