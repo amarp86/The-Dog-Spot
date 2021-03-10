@@ -10,7 +10,7 @@ const main = async () => {
       age: 34,
       breed: "huskie",
       images: [
-        "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "https://images.unsplash.com/photo-1520848315518-b991dd16a625?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       ],
       description: "fluffy, and does not listen to the rules",
       location: "Somerset, NJ",
@@ -21,7 +21,7 @@ const main = async () => {
       age: 24,
       breed: "pug",
       images: [
-        "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "https://images.unsplash.com/photo-1529927066849-79b791a69825?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1349&q=80",
       ],
       description: "Small, Agile, and will bite your ankles",
       location: "New York City, NY",
@@ -32,7 +32,7 @@ const main = async () => {
       age: 27,
       breed: "Bernese Mountain Dog",
       images: [
-        "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "https://images.unsplash.com/photo-1507671044455-bd4511e3e5c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       ],
       description: "Big, Rugged, and lovable",
       location: "Chicago, IL",

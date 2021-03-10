@@ -9,7 +9,7 @@ const Dog = new Schema(
     images: [],
     location: { type: String, required: true },
     description: { type: String, required: true },
-    isAdopted: { type: Boolean, required: true },
+    isAdopted: { type: Boolean, required: true, default: false },
   },
   { timestamps: true }
 );
