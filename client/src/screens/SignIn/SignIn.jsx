@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./SignIn.css";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
-import Layout from "../../components/shared/Layout/Layout";
 
 const SignIn = (props) => {
   const history = useHistory();
@@ -58,6 +57,10 @@ const SignIn = (props) => {
 
   const { name, password, email } = form;
 
+  const handleSignUp = () => {
+    history.push("/sign-up");
+  };
+
   return (
     <div className="form-container">
       <h3>Sign In</h3>
@@ -91,6 +94,10 @@ const SignIn = (props) => {
         />
         {renderError()}
       </form>
+      <div className="instructions">Don't Have an Account? Sign Up Below:</div>
+      <button className="sign-up" onClick={handleSignUp}>
+        Sign Up
+      </button>
     </div>
   );
 };

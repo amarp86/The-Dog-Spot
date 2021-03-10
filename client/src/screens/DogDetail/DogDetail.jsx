@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useHistory } from "react-router-dom";
 import { getDog, unAdoptDog, adoptDog } from "../../services/dogs.js";
 import "./DogDetail.css";
 
@@ -7,6 +7,7 @@ function DogDetail(props) {
   const [dog, setDog] = useState([]);
   const { id } = useParams();
   const [isLoaded, setIsLoaded] = useState(false);
+  const history = useHistory();
 
   const params = useParams();
   const [isUpdated, setUpdated] = useState(false);
@@ -40,6 +41,10 @@ function DogDetail(props) {
     setUpdated(!isUpdated);
   };
 
+  const handleSignIn = () => {
+    history.push("/sign-in");
+  };
+
   if (props.user) {
     return (
       <div className="dog-detail-area">
@@ -69,6 +74,9 @@ function DogDetail(props) {
         <div className="dog-breed">{dog.breed}</div>
         <div className="dog-description">{dog.description}</div>
         <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
+        <button className="sign-in-button" onClick={handleSignIn}>
+          Sign-In
+        </button>
       </div>
     );
   }
