@@ -40,24 +40,38 @@ function DogDetail(props) {
     setUpdated(!isUpdated);
   };
 
-  return (
-    <div className="dog-detail-area">
-      <img src={dog.images} alt="dog" />
-      <div className="dog-name">{dog.name}</div>
-      <div className="dog-age">{dog.age}</div>
-      <div className="dog-location">{dog.location}</div>
-      <div className="dog-breed">{dog.breed}</div>
-      <div className="dog-description">{dog.description}</div>
-      <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
-      <button onClick={handleAdopt}>Adopt Me</button>
-      <button onClick={handleUnAdopt}>Return Me</button>
-      <button>
-        <Link className="edit-link" to={`/dogs/${dog._id}/edit`}>
-          Edit
-        </Link>
-      </button>
-    </div>
-  );
+  if (props.user) {
+    return (
+      <div className="dog-detail-area">
+        <img src={dog.images} alt="dog" />
+        <div className="dog-name">{dog.name}</div>
+        <div className="dog-age">{dog.age}</div>
+        <div className="dog-location">{dog.location}</div>
+        <div className="dog-breed">{dog.breed}</div>
+        <div className="dog-description">{dog.description}</div>
+        <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
+        <button onClick={handleAdopt}>Adopt Me</button>
+        <button onClick={handleUnAdopt}>Return Me</button>
+        <button>
+          <Link className="edit-link" to={`/dogs/${dog._id}/edit`}>
+            Edit
+          </Link>
+        </button>
+      </div>
+    );
+  } else {
+    return (
+      <div className="dog-detail-area">
+        <img src={dog.images} alt="dog" />
+        <div className="dog-name">{dog.name}</div>
+        <div className="dog-age">{dog.age}</div>
+        <div className="dog-location">{dog.location}</div>
+        <div className="dog-breed">{dog.breed}</div>
+        <div className="dog-description">{dog.description}</div>
+        <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
+      </div>
+    );
+  }
 }
 
 export default DogDetail;
