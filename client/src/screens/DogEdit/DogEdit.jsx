@@ -50,9 +50,11 @@ const DogEdit = (props) => {
       <div className="image-container">
         <img className="edit-product-image" src={dog.images} alt={dog.name} />
         <form onSubmit={handleSubmit}>
-          <input
+          <textarea
             className="edit-input-image-link"
             placeholder="Image Link"
+            rows={1}
+            cols={170}
             value={dog.images}
             name="images"
             required

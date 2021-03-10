@@ -3,22 +3,36 @@ import { useParams, Link, useHistory } from "react-router-dom";
 import { getDog, unAdoptDog, adoptDog } from "../../services/dogs.js";
 import "./DogDetail.css";
 
+import axios from "axios";
+
 function DogDetail(props) {
   const [dog, setDog] = useState([]);
   const { id } = useParams();
   const [isLoaded, setIsLoaded] = useState(false);
   const history = useHistory();
+  const [breedInfo, setBreedInfo] = useState([]);
 
   const params = useParams();
   const [isUpdated, setUpdated] = useState(false);
 
   useEffect(() => {
-    const fetchDogs = async () => {
+    const fetchDog = async () => {
       const dog = await getDog(id);
       setDog(dog);
+      const resp = await axios.get(
+        `https://api-dog-breeds.herokuapp.com/api/search?q=${dog.breed}`
+      );
+      console.log(resp);
+      let matchedDog = resp.data.find((apiDog) =>
+        apiDog.breedName.includes(dog.breed)
+      );
+      // console.log(match);
+      // let index = resp.data.indexOf(match);
+      // console.log(index);
+      setBreedInfo(matchedDog.description);
       setIsLoaded(true);
     };
-    fetchDogs();
+    fetchDog();
   }, [id, isUpdated]);
 
   if (!isLoaded) {
@@ -55,6 +69,7 @@ function DogDetail(props) {
         <div className="dog-breed">{dog.breed}</div>
         <div className="dog-description">{dog.description}</div>
         <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
+        <div className="external-dog-temperment">{breedInfo}</div>
         <button onClick={handleAdopt}>Adopt Me</button>
         <button onClick={handleUnAdopt}>Return Me</button>
         <button>
@@ -74,6 +89,7 @@ function DogDetail(props) {
         <div className="dog-breed">{dog.breed}</div>
         <div className="dog-description">{dog.description}</div>
         <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
+        <div className="external-dog-temperment">{breedInfo}</div>
         <button className="sign-in-button" onClick={handleSignIn}>
           Sign-In
         </button>
