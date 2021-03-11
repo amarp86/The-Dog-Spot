@@ -52,6 +52,18 @@ const DogEdit = (props) => {
   if (isUpdated) {
     return <Redirect to={`/dogs/${params.id}`} />;
   }
+  const titleCase = (str) => {
+    return str
+      .split(" ")
+      .map((word) => {
+        if (word[0] === "'") {
+          return "'" + word[1].toUpperCase() + word.substring(2);
+        } else {
+          return word[0].toUpperCase() + word.substring(1);
+        }
+      })
+      .join(" ");
+  };
 
   return (
     <div className="dog-edit">
@@ -106,7 +118,7 @@ const DogEdit = (props) => {
           onChange={handleChange}
         >
           {allBreeds.map((dog, index) => (
-            <option key={index}>{dog.breedName}</option>
+            <option key={index}>{titleCase(dog.breedName)}</option>
           ))}
         </select>
         <input
