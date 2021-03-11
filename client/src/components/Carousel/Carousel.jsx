@@ -2,7 +2,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { getAdoptedDogs } from "../../services/dogs";
 import { useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./Carousel.css";
 
 const Carousel = (props) => {
