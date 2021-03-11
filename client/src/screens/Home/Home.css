@@ -1,5 +1,5 @@
 .home-area {
-  background-color: #fcf6ed;
+  background-color: #ffebda;
   display: flex;
   flex-direction: column;
 }
@@ -15,12 +15,12 @@
   bottom: 240px;
   float: left;
   margin-left: 16px;
-  background-color: #f77b00;
+  background-color: #f77c00e2;
+
   /* opacity: 0.9; */
   color: white;
   font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 25px;
 }
 
 .carousel {
@@ -28,12 +28,17 @@
   margin-top: 50px;
 }
 
-.brand-statement {
+.statement {
   font-size: 24px;
   font-weight: bold;
   margin-left: 50px;
   margin-right: 50px;
   line-height: 2em;
+  color: #2f2f2f;
+}
+.brand-statement {
+  background-color: #f8d6bc;
+  padding: 20px;
 }
 
 .adopted {
@@ -48,15 +53,15 @@
   padding: 10px;
 }
 .make-a-difference {
-  background-color: #f8d6bc;
-  display: flex;
+  margin-top: 200px;
 }
 .title {
-  margin-bottom: 50px;
   margin-top: 40px;
-  color: #2f2f2f;
+  width: 45vh;
+  position: relative;
+  bottom: 830px;
   font-size: 30px;
-  float: left;
+
   background-color: #f77b00;
   color: white;
   margin-left: 16px;
@@ -68,4 +73,43 @@
   display: flex;
   margin-top: 100px;
   justify-content: space-around;
+  justify-self: center;
+  position: relative;
+  bottom: 800px;
+}
+.banner-two {
+  width: 100%;
+  height: auto;
+}
+.adopt {
+  font-size: 50px;
+}
+.dog-icon,
+.donate-icon {
+  margin-top: 10px;
+  color: white;
+}
+
+svg {
+  margin-top: 10px;
+
+  margin-bottom: 20px;
+}
+
+.container-link {
+  background-color: rgba(255, 155, 67, 0.892);
+
+  padding: 100px;
+  margin-bottom: 20px;
+  border-radius: 10%;
+}
+
+.svg-inline--fa.fa-donate {
+  margin-left: 30px;
+}
+
+.home-links :hover {
+  background-color: #f77b00;
+  border-radius: 0;
+  transition: 0.3s;
 }

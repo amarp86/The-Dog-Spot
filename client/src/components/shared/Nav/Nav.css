@@ -1,25 +1,23 @@
 .nav {
   position: fixed;
-  min-width: 99.35%;
-  min-height: max-content;
+  min-width: 100%;
   font-family: "Luckiest Guy", cursive;
-  min-height: 8vh;
+  min-height: 110px;
   display: flex;
   flex-direction: row;
   background-color: #f77b00;
-  z-index: 99;
+  z-index: 999;
 }
 
 .logo {
   display: flex;
   position: absolute;
-  top: 35px;
+  top: 55px;
   left: 25px;
   font-size: 30pt;
   font-weight: 900;
   text-decoration: none;
   color: #fcf6ed;
-  z-index: 99;
 }
 
 .links {
@@ -32,21 +30,17 @@
   margin-left: auto;
   margin-top: auto;
   margin-right: 10px;
-  z-index: 99;
 }
 .links a {
   text-decoration: none;
   color: #383838;
-  z-index: 99;
 }
 .links a:hover {
   color: #fcf6ed;
-  z-index: 99;
 }
 .link {
   position: relative;
   padding-left: 10px;
-  z-index: 99;
 }
 
 .link-welcome {
@@ -55,5 +49,4 @@
   position: absolute;
   top: 10px;
   right: 50px;
-  z-index: 99;
 }
