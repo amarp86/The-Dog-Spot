@@ -43,6 +43,18 @@ const DogCreate = (props) => {
   if (isCreated) {
     return <Redirect to={`/dogs`} />;
   }
+  const titleCase = (str) => {
+    return str
+      .split(" ")
+      .map((word) => {
+        if (word[0] === "'") {
+          return "'" + word[1].toUpperCase() + word.substring(2);
+        } else {
+          return word[0].toUpperCase() + word.substring(1);
+        }
+      })
+      .join(" ");
+  };
 
   return (
     <form className="create-form" onSubmit={handleSubmit}>
@@ -97,7 +109,7 @@ const DogCreate = (props) => {
         onChange={handleChange}
       >
         {allBreeds.map((dog, index) => (
-          <option key={index}>{dog.breedName}</option>
+          <option key={index}>{titleCase(dog.breedName)}</option>
         ))}
       </select>
 
