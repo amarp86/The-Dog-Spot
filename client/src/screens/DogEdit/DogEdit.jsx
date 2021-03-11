@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
 import { useParams, Redirect } from "react-router-dom";
-
 import { getDog, updateDog } from "../../services/dogs";
+import "./DogEdit.css";
 
 const DogEdit = (props) => {
   const [allBreeds, setAllBreeds] = useState([]);

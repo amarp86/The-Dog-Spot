@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-
 import { Redirect } from "react-router-dom";
 import { createDog } from "../../services/dogs";
 import axios from "axios";
+import "./DogCreate.css";
 
 const DogCreate = (props) => {
   const [isCreated, setCreated] = useState(false);
