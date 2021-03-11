@@ -63,21 +63,44 @@ function DogDetail(props) {
   if (props.user) {
     return (
       <div className="dog-detail-area">
-        <img src={dog.images} alt="dog" />
-        <div className="dog-name">{dog.name}</div>
-        <div className="dog-age">{dog.age}</div>
-        <div className="dog-location">{dog.location}</div>
-        <div className="dog-breed">{dog.breed}</div>
-        <div className="dog-description">{dog.description}</div>
-        <div className="adopted-status">{`Has ${dog.name} been adopted: ${dog.isAdopted}`}</div>
-        <div className="external-dog-temperment">{breedInfo}</div>
-        <button onClick={handleAdopt}>Adopt Me</button>
-        <button onClick={handleUnAdopt}>Return Me</button>
-        <button>
-          <Link className="edit-link" to={`/dogs/${dog._id}/edit`}>
-            Edit
-          </Link>
-        </button>
+        <div className="details-container">
+          <img className="detail-image" src={dog.images} alt="dog" />
+          <div className="details">
+            <div className="dog-name">{dog.name}</div>
+            <div className="dog-age">
+              <span className="age-title">Age:</span> {dog.age}
+            </div>
+            <div className="dog-location">
+              <span className="location-title">Location:</span> {dog.location}
+            </div>
+            <div className="dog-breed">
+              <span className="breed-title"> Breed:</span> {dog.breed}
+            </div>
+            <div className="dog-description">
+              <span className="description-title">About {dog.name}: </span>
+              {dog.description}
+            </div>
+            <div className="adopted-status">
+              {dog.isAdopted === true
+                ? `${dog.name} has been adopted!`
+                : `${dog.name} is available for adoption!`}
+            </div>
+          </div>
+        </div>
+
+        <div className="external-dog-temperment">
+          <p className="breed-facts-title">Breed Facts:</p>
+          <p>{breedInfo}</p>
+        </div>
+        <div className="adopt-buttons">
+          <button onClick={handleAdopt}>Adopt Me</button>
+          <button onClick={handleUnAdopt}>Return Me</button>
+          <button>
+            <Link className="edit-link" to={`/dogs/${dog._id}/edit`}>
+              Edit
+            </Link>
+          </button>
+        </div>
       </div>
     );
   } else {
