@@ -1,0 +1,51 @@
+.nav {
+  position: fixed;
+  min-width: 99.35%;
+  font-family: "Luckiest Guy", cursive;
+  min-height: 8vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #f77b00;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  font-size: 30pt;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fcf6ed;
+}
+
+.links {
+  min-height: min-content;
+  min-width: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 15pt;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 10px;
+}
+.links a {
+  text-decoration: none;
+  color: #383838;
+}
+.links a:hover {
+  color: #fcf6ed;
+}
+.link {
+  position: relative;
+  padding-left: 10px;
+}
+
+.link-welcome {
+  color: #fcf6ed;
+  font-size: 25pt;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}

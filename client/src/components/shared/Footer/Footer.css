@@ -1,0 +1,30 @@
+.footer-area {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #f77b00;
+}
+
+.linkedin-image {
+  height: 25px;
+  padding: 0px 10px;
+}
+
+.contributors {
+  min-width: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+a {
+  font-family: "Luckiest Guy", cursive;
+  text-decoration: none;
+  font-size: 15pt;
+  color: #383838;
+}
+.contributors a:hover {
+  color: #fcf6ed;
+}
