@@ -1,0 +1,68 @@
+.home-area {
+  background-color: #fcf6ed;
+  display: flex;
+  flex-direction: column;
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.headliner {
+  font-size: 60px;
+
+  position: relative;
+  bottom: 200px;
+  float: left;
+  left: 16px;
+  background-color: #f77b00;
+  opacity: 0.9;
+  color: white;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carousel {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.brand-statement {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 2em;
+}
+
+.adopted {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  color: #2f2f2f;
+  float: left;
+  background-color: #f77b00;
+  color: white;
+  margin-left: 16px;
+  padding: 10px;
+}
+.make-a-difference {
+  background-color: #f8d6bc;
+}
+.title {
+  margin-left: 16px;
+  background-color: #f77b00;
+  padding: 10px;
+  float: left;
+  color: white;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.home-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
