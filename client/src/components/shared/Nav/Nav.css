@@ -1,13 +1,12 @@
 .nav {
   position: fixed;
-  min-width: 100%;
+  width: 100vw;
   font-family: "Luckiest Guy", cursive;
   min-height: 110px;
   display: flex;
   flex-direction: row;
   background-color: #f77b00;
-  z-index: 99999;
-  opacity: 80%;
+  z-index: 99;
 }
 
 .logo {
