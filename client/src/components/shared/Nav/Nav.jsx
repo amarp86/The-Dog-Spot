@@ -43,10 +43,14 @@ const Nav = ({ user }) => {
     <nav>
       <div className="nav">
         <NavLink className="logo" to="/">
-          The-Dog-Spot
+          THE DOG SPOT
         </NavLink>
         <div className="links">
-          {user && <div className="link welcome">Welcome, {user.name}</div>}
+          {user && (
+            <div className="link-welcome">
+              Welcome, {user.name.toUpperCase()}
+            </div>
+          )}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
