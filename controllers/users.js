@@ -11,7 +11,7 @@ const TOKEN_KEY = process.env.TOKEN_KEY || "4vq8756b786bq89cbfcq84rcrb";
 const signUp = async (req, res) => {
   try {
     const { name, email, password } = req.body;
-    const password_digest = await bcrypt.hash(password, SALT_ROUNDS);
+    const password_digest = await bcrypt.hash(password, parseInt(SALT_ROUNDS));
     const user = new User({
       name,
       email,
