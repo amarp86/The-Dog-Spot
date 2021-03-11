@@ -77,12 +77,16 @@ function DogDetail(props) {
               <span className="description-title">About {dog.name}: </span>
               {dog.description}
             </div>
-            <div className="adopted-status">{`${dog.name} has been adopted: ${dog.isAdopted}`}</div>
+            <div className="adopted-status">
+              {dog.isAdopted === true
+                ? `${dog.name} has been adopted!`
+                : `${dog.name} is available for adoption!`}
+            </div>
           </div>
         </div>
 
         <div className="external-dog-temperment">
-          <p>Breed Facts:</p>
+          <p className="breed-facts-title">Breed Facts:</p>
           <p>{breedInfo}</p>
         </div>
         <div className="adopt-buttons">

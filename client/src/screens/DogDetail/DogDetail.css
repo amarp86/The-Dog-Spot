@@ -1,10 +1,17 @@
 .dog-detail-area {
   display: flex;
   flex-direction: column;
+  margin: 40px;
 }
 
 .details-container {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.details {
+  line-height: 3;
 }
 
 .detail-image {
@@ -16,9 +23,15 @@
   text-decoration: none;
 }
 
+.dog-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .age-title,
 .location-title,
 .breed-title,
-.description-title {
+.description-title,
+.breed-facts-title {
   font-weight: bold;
 }
