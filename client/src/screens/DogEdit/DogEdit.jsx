@@ -1,16 +1,19 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 import { useParams, Redirect } from "react-router-dom";
 
 import { getDog, updateDog } from "../../services/dogs";
 
 const DogEdit = (props) => {
+  const [allBreeds, setAllBreeds] = useState([]);
   const [dog, setDog] = useState({
     name: "",
     age: "",
     images: "",
     location: "",
     description: "",
+    breed: "",
   });
 
   const [isUpdated, setUpdated] = useState(false);
@@ -22,6 +25,13 @@ const DogEdit = (props) => {
       const dog = await getDog(id);
       setDog(dog);
     };
+    const fetchBreed = async () => {
+      const resp = await axios.get(
+        `https://api-dog-breeds.herokuapp.com/api/dogs`
+      );
+      setAllBreeds(resp.data);
+    };
+    fetchBreed();
     fetchDog();
   }, [id]);
 
@@ -49,9 +59,11 @@ const DogEdit = (props) => {
       <div className="image-container">
         <img className="edit-product-image" src={dog.images} alt={dog.name} />
         <form onSubmit={handleSubmit}>
-          <input
+          <textarea
             className="edit-input-image-link"
             placeholder="Image Link"
+            rows={1}
+            cols={170}
             value={dog.images}
             name="images"
             required
@@ -87,6 +99,17 @@ const DogEdit = (props) => {
           required
           onChange={handleChange}
         />
+        <select
+          className="breed-select"
+          value={dog.breed}
+          name="breed"
+          required
+          onChange={handleChange}
+        >
+          {allBreeds.map((dog, index) => (
+            <option key={index}>{dog.breedName}</option>
+          ))}
+        </select>
         <input
           className="input-location"
           type="text"

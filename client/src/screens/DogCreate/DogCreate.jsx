@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Redirect } from "react-router-dom";
 import { createDog } from "../../services/dogs";
+import axios from "axios";
 
 const DogCreate = (props) => {
+  const [isCreated, setCreated] = useState(false);
+  const [allBreeds, setAllBreeds] = useState([]);
   const [dog, setDog] = useState({
     name: "",
     description: "",
@@ -11,10 +14,17 @@ const DogCreate = (props) => {
     location: "",
     age: "",
     breed: "",
-    isAdopted: "",
   });
 
-  const [isCreated, setCreated] = useState(false);
+  useEffect(() => {
+    const fetchDog = async () => {
+      const resp = await axios.get(
+        `https://api-dog-breeds.herokuapp.com/api/dogs`
+      );
+      setAllBreeds(resp.data);
+    };
+    fetchDog();
+  }, []);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -33,6 +43,7 @@ const DogCreate = (props) => {
   if (isCreated) {
     return <Redirect to={`/dogs`} />;
   }
+
   return (
     <form className="create-form" onSubmit={handleSubmit}>
       <input
@@ -77,23 +88,17 @@ const DogCreate = (props) => {
         required
         onChange={handleChange}
       />
-      <input
-        className="input-breed"
-        placeholder="Dog Breed"
+
+      <select
+        className="breed-select"
         value={dog.breed}
         name="breed"
         required
         onChange={handleChange}
-      />
-      <select
-        className="input-adopted-status"
-        value={dog.isAdopted}
-        name="isAdopted"
-        required
-        onChange={handleChange}
       >
-        <option value="true">True</option>
-        <option value="false">False</option>
+        {allBreeds.map((dog, index) => (
+          <option key={index}>{dog.breedName}</option>
+        ))}
       </select>
 
       <button type="submit" className="submit-button">

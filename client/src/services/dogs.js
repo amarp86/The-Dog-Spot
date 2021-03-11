@@ -11,7 +11,7 @@ export const getDogs = async () => {
 
 export const getAdoptedDogs = async () => {
   try {
-    const response = await api.get("/adopted-dogs");
+    const response = await api.get("/dogs/adopted-dogs");
     return response.data;
   } catch (error) {
     throw error;
