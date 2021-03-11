@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: row;
   background-color: #f77b00;
+  z-index: 99;
 }
 
 .logo {
@@ -18,6 +19,7 @@
   font-weight: 900;
   text-decoration: none;
   color: #fcf6ed;
+  z-index: 99;
 }
 
 .links {
@@ -30,17 +32,21 @@
   margin-left: auto;
   margin-top: auto;
   margin-right: 10px;
+  z-index: 99;
 }
 .links a {
   text-decoration: none;
   color: #383838;
+  z-index: 99;
 }
 .links a:hover {
   color: #fcf6ed;
+  z-index: 99;
 }
 .link {
   position: relative;
   padding-left: 10px;
+  z-index: 99;
 }
 
 .link-welcome {
@@ -49,4 +55,5 @@
   position: absolute;
   top: 10px;
   right: 50px;
+  z-index: 99;
 }

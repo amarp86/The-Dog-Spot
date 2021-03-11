@@ -20,7 +20,7 @@ function Home(props) {
       </div>
 
       <div className="make-a-difference">
-        <h4 className="title">You can make a difference.</h4>
+        <div className="title">You can make a difference.</div>
         
         <div className="home-links">
           <Link to="/dogs">
