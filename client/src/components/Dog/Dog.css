@@ -1,3 +1,13 @@
 .dog-image {
-  height: 400px;
+
+  height: 250px;
+  width: 350px;
+
+  margin: 0 auto;
+}
+
+.dog-name {
+  margin: 5px auto;
+
+
 }

@@ -1,13 +1,40 @@
+.adopt-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.adopt-buttons button {
+  width: fit-content;
+  background-color: #f77b00;
+  font-family: "Montserrat";
+  color: white;
+  font-size: 15pt;
+  border: none;
+}
+
+.adopt-buttons a {
+  color: white;
+  font-family: "Montserrat";
+}
+
+.breed-facts {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
 .dog-detail-area {
   display: flex;
   flex-direction: column;
-  margin: 40px;
+  margin: 50px;
 }
 
 .details-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 150px;
+  flex-wrap: wrap;
 }
 
 .details {
@@ -23,6 +50,11 @@
   text-decoration: none;
 }
 
+.external-dog-termperment {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .dog-name {
   font-size: 30px;
   font-weight: bold;
@@ -34,4 +66,16 @@
 .description-title,
 .breed-facts-title {
   font-weight: bold;
+  font-size: 20px;
+}
+
+.sign-in-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-button {
+  width: fit-content;
+  background-color: #f77b00;
+  font-family: "Luckiest Guy", cursive;
 }
