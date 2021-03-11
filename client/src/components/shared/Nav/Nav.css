@@ -1,6 +1,7 @@
 .nav {
   position: fixed;
   min-width: 99.35%;
+  min-height: max-content;
   font-family: "Luckiest Guy", cursive;
   min-height: 8vh;
   display: flex;
