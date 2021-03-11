@@ -1,0 +1,16 @@
+.all-dogs-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 150px;
+  padding: 15px 15px;
+}
+.each-dog {
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 15px 15px;
+  margin: 15px 15px;
+  min-width: fit-content;
+  align-items: center;
+  background-color: #f8d6bc;
+}

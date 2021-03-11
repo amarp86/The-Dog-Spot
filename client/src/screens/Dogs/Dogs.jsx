@@ -1,6 +1,7 @@
 import { getDogs } from "../../services/dogs.js";
 import { useEffect, useState } from "react";
 import Dog from "../../components/Dog/Dog";
+import "./Dogs.css";
 
 function Dogs(props) {
   const [allDogs, setAllDogs] = useState([]);
@@ -15,7 +16,9 @@ function Dogs(props) {
   return (
     <div className="all-dogs-area">
       {allDogs.map((dog, index) => (
-        <Dog key={index} dog={dog} />
+        <div className="each-dog">
+          <Dog key={index} dog={dog} />
+        </div>
       ))}
     </div>
   );
