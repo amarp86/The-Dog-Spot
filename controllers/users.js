@@ -5,8 +5,8 @@ const db = require("../db/connection");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-const SALT_ROUNDS = 11;
-const TOKEN_KEY = "longodoggokeyo";
+const SALT_ROUNDS = process.env.SALT_ROUNDS || 11;
+const TOKEN_KEY = process.env.TOKEN_KEY || "4vq8756b786bq89cbfcq84rcrb";
 
 const signUp = async (req, res) => {
   try {

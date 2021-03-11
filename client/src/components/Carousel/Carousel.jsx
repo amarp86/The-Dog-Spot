@@ -2,6 +2,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { getAdoptedDogs } from "../../services/dogs";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const Carousel = (props) => {
   const [adoptedDogs, setAdoptedDogs] = useState([]);
 
@@ -20,7 +21,9 @@ const Carousel = (props) => {
   };
   let items = adoptedDogs.map((dog, index) => (
     <div className="item" data-value={`${index}`}>
-      <img src={dog.images} alt="dog" />
+      <Link to={`/dogs/${dog._id}`}>
+        <img src={dog.images} alt="dog" />
+      </Link>
     </div>
   ));
 
