@@ -68,7 +68,7 @@ const DogEdit = (props) => {
   return (
     <div className="dog-edit">
       <div className="image-container">
-        <img className="edit-product-image" src={dog.images} alt={dog.name} />
+        <img className="edit-dog-image" src={dog.images} alt={dog.name} />
         <form onSubmit={handleSubmit}>
           <textarea
             className="edit-input-image-link"
