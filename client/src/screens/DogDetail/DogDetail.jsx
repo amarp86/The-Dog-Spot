@@ -147,8 +147,10 @@ function DogDetail(props) {
         </div>
 
         <div className="external-dog-temperment">
-          <p className="breed-facts-title">Breed Facts:</p>
-          <p className="breed-facts">{breedInfo}</p>
+          <h4 className="breed-facts-title">Breed Facts:</h4>
+          <span>
+            <p className="breed-facts">{breedInfo}</p>
+          </span>
         </div>
         <div className="sign-in-container">
           <button className="sign-in-button" onClick={handleSignIn}>
