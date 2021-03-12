@@ -331,5 +331,11 @@ button {
   margin: 4em auto;
 }
 .password-error {
+  color: red;
+  text-align: center;
+}
+
+.email-error {
+  color: red;
   text-align: center;
 }

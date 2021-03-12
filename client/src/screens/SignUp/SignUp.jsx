@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SignUp.css";
-import { signUp, signIn } from "../../services/users";
+import { signUp } from "../../services/users";
 import { useHistory } from "react-router-dom";
 
 const SignUp = (props) => {
@@ -26,9 +26,19 @@ const SignUp = (props) => {
     const { setUser } = props;
 
     signUp(form)
-      .then(() => signIn(form))
-      .then((user) => setUser(user))
-      .then(() => history.push("/"))
+      // .then(() => signIn(form))
+      .then((user) => {
+        //console.log("this is the user 1 " + user);
+        if (user === "User Already Exists") {
+          alert("User Already Exists, Please try Another Email");
+          history.push("/sign-up");
+        } else {
+          //console.log("this is the user 3 " + user);
+          setUser(user);
+          history.push("/");
+        }
+      })
+      // .then(() => history.push("/"))
       .catch((error) => {
         console.error(error);
         setForm({
@@ -50,9 +60,10 @@ const SignUp = (props) => {
           {form.errorMsg}
         </button>
       );
-    }
-    if (password !== passwordConfirmation || !password) {
+    } else if (password !== passwordConfirmation || !password) {
       return <p className="password-error">Password's Do Not Match</p>;
+    } else if (email.includes("@") !== true) {
+      return <p className="email-error">Invalid Email - must include @</p>;
     } else {
       return <button type="submit">Sign Up</button>;
     }
