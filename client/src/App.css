@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-
+  overflow: hidden; /* Hide scrollbars */
   height: 100vh;
 }
 body {

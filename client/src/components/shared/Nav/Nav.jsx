@@ -1,6 +1,10 @@
 import React from "react";
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
+import Burger from "../Burger/Burger";
+import { useState } from "react";
+import SideNav from "../SideNav/SideNav";
+
 
 const authenticatedOptions = (
   <>
@@ -39,6 +43,10 @@ const alwaysOptions = (
 );
 
 const Nav = ({ user }) => {
+  const [open, setOpen] = useState(false);
+  const burgerToggle = () => {
+    setOpen(!open);
+  };
   return (
     <nav>
       <div className="nav">
@@ -54,7 +62,11 @@ const Nav = ({ user }) => {
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
+        <Burger open={open} burgerToggle={burgerToggle} />
+       
       </div>
+     
+     
     </nav>
   );
 };
