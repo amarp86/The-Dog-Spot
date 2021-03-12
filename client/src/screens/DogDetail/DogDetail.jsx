@@ -14,6 +14,18 @@ function DogDetail(props) {
 
   const params = useParams();
   const [isUpdated, setUpdated] = useState(false);
+  const titleCase = (str) => {
+    return str
+      .split(" ")
+      .map((word) => {
+        if (word[0] === "'") {
+          return "'" + word[1].toUpperCase() + word.substring(2);
+        } else {
+          return word[0].toUpperCase() + word.substring(1);
+        }
+      })
+      .join(" ");
+  };
 
   useEffect(() => {
     const fetchDog = async () => {
@@ -22,12 +34,11 @@ function DogDetail(props) {
       const resp = await axios.get(
         `https://api-dog-breeds.herokuapp.com/api/search?q=${dog.breed}`
       );
-      console.log(resp.data);
+
       let matchedDog = resp.data.find((apiDog) =>
         titleCase(apiDog.breedName).includes(titleCase(dog.breed))
       );
-      console.log(dog.breed);
-      console.log(matchedDog);
+
       if (!matchedDog) {
         setBreedInfo("No Information Available About This Breed");
       } else {
@@ -60,19 +71,6 @@ function DogDetail(props) {
 
   const handleSignIn = () => {
     history.push("/sign-in");
-  };
-
-  const titleCase = (str) => {
-    return str
-      .split(" ")
-      .map((word) => {
-        if (word[0] === "'") {
-          return "'" + word[1].toUpperCase() + word.substring(2);
-        } else {
-          return word[0].toUpperCase() + word.substring(1);
-        }
-      })
-      .join(" ");
   };
 
   if (props.user) {
