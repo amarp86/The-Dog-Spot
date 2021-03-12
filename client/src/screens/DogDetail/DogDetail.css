@@ -104,11 +104,18 @@
   width: fit-content;
   background-color: #f77b00;
   font-family: "Luckiest Guy", cursive;
+  padding: 10px;
 }
 
 @media screen and (max-width: 600px) {
   .detail-image {
     height: 200px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 599px) {
+  .sign-in-button {
+    margin-bottom: 20px;
   }
 }
 
@@ -142,5 +149,8 @@
 
   .adopt-buttons button {
     margin-bottom: 10px;
+  }
+  .sign-in-button {
+    margin-bottom: 20px;
   }
 }
