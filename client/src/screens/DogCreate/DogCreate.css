@@ -1,0 +1,46 @@
+.create-container {
+  align-self: center;
+  padding: 1em;
+  width: 50%;
+  height: 80%;
+  margin: 150px auto;
+  border: 2px solid #b0bec5;
+  border-radius: 6px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.create-container h3 {
+  text-align: center;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.create-form input,
+.create-form textarea {
+  width: 60%;
+}
+
+.submit-button {
+  width: 50%;
+  margin: 1em auto;
+  background: #f77b00;
+  border: none;
+}
+
+.submit-button:hover {
+  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.input-image-link {
+  margin-bottom: 15px;
+  font-family: "Montserrat";
+  padding: 10px 10px;
+  font-size: 16px;
+}

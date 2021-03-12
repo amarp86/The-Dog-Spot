@@ -18,9 +18,8 @@
   font-family: "Montserrat";
 }
 
-.breed-facts {
-  line-height: 1.5;
-  font-size: 16px;
+.adopted-status {
+  font-weight: bold;
 }
 
 .dog-detail-area {
@@ -53,6 +52,8 @@
 .external-dog-temperment {
   width: 80%;
   margin: 0 auto;
+  line-height: 1.5;
+  font-size: 18px;
 }
 
 .dog-name {
@@ -66,6 +67,13 @@
 .description-title,
 .breed-facts-title {
   font-weight: bold;
+}
+
+.dog-age,
+.dog-location,
+.dog-breed,
+.dog-description,
+.adopted-status {
   font-size: 20px;
 }
 

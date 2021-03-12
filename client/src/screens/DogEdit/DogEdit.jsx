@@ -69,20 +69,16 @@ const DogEdit = (props) => {
     <div className="dog-edit">
       <div className="image-container">
         <img className="edit-dog-image" src={dog.images} alt={dog.name} />
-        <form onSubmit={handleSubmit}>
-          <textarea
-            className="edit-input-image-link"
-            placeholder="Image Link"
-            rows={1}
-            cols={170}
-            value={dog.images}
-            name="images"
-            required
-            onChange={handleChange}
-          />
-        </form>
       </div>
       <form className="edit-form" onSubmit={handleSubmit}>
+        <input
+          className="edit-input-image-link"
+          placeholder="Image Link"
+          value={dog.images}
+          name="images"
+          required
+          onChange={handleChange}
+        />
         <input
           className="input-name"
           placeholder="Name"

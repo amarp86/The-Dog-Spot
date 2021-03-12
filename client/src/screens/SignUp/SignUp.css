@@ -105,7 +105,7 @@ button {
 .form-container form button {
   width: 50%;
   margin: 1em auto;
-  background: #56c8d8;
+  background: #f77b00;
   border: none;
 }
 
@@ -231,12 +231,12 @@ button {
 }
 
 .item-container .item button {
-  background: #0097a7;
+  background: #f77b00;
   color: #f8f8f8;
 }
 
 .item-container .item button:hover {
-  background: #56c8d8;
+  background: #f77b00;
   color: #333;
 }
 
