@@ -154,7 +154,7 @@ function DogDetail(props) {
         </div>
         <div className="sign-in-container">
           <button className="sign-in-button" onClick={handleSignIn}>
-            Sign-Up to Adopt Me
+            Sign-In to Adopt Me
           </button>
         </div>
       </div>
