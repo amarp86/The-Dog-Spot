@@ -1,0 +1,41 @@
+.dog-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-dog-image {
+  height: 300px;
+}
+
+.edit-input-image-link,
+.input-name,
+.input-age,
+.textarea-description,
+.breed-select,
+.input-location {
+  margin-bottom: 15px;
+  font-family: "Montserrat";
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
+.image-container {
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.save-button {
+  width: fit-content;
+  margin: 30px auto;
+  background-color: #f77b00;
+  color: white;
+  border: none;
+  font-size: 18px;
+}

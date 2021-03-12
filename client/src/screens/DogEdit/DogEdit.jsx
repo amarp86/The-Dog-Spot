@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
 import { useParams, Redirect } from "react-router-dom";
-
 import { getDog, updateDog } from "../../services/dogs";
+import "./DogEdit.css";
 
 const DogEdit = (props) => {
   const [allBreeds, setAllBreeds] = useState([]);
@@ -53,25 +52,33 @@ const DogEdit = (props) => {
   if (isUpdated) {
     return <Redirect to={`/dogs/${params.id}`} />;
   }
+  const titleCase = (str) => {
+    return str
+      .split(" ")
+      .map((word) => {
+        if (word[0] === "'") {
+          return "'" + word[1].toUpperCase() + word.substring(2);
+        } else {
+          return word[0].toUpperCase() + word.substring(1);
+        }
+      })
+      .join(" ");
+  };
 
   return (
     <div className="dog-edit">
       <div className="image-container">
-        <img className="edit-product-image" src={dog.images} alt={dog.name} />
-        <form onSubmit={handleSubmit}>
-          <textarea
-            className="edit-input-image-link"
-            placeholder="Image Link"
-            rows={1}
-            cols={170}
-            value={dog.images}
-            name="images"
-            required
-            onChange={handleChange}
-          />
-        </form>
+        <img className="edit-dog-image" src={dog.images} alt={dog.name} />
       </div>
       <form className="edit-form" onSubmit={handleSubmit}>
+        <input
+          className="edit-input-image-link"
+          placeholder="Image Link"
+          value={dog.images}
+          name="images"
+          required
+          onChange={handleChange}
+        />
         <input
           className="input-name"
           placeholder="Name"
@@ -107,7 +114,7 @@ const DogEdit = (props) => {
           onChange={handleChange}
         >
           {allBreeds.map((dog, index) => (
-            <option key={index}>{dog.breedName}</option>
+            <option key={index}>{titleCase(dog.breedName)}</option>
           ))}
         </select>
         <input

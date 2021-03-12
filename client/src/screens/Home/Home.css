@@ -1,0 +1,123 @@
+.home-area {
+  background-color: #ffebda;
+  display: flex;
+  flex-direction: column;
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
+.home-banner-image {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.headliner {
+  font-size: 60px;
+
+  position: absolute;
+  bottom: 100px;
+  left: 16px;
+
+  background-color: #f77c00e2;
+
+  color: white;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.carousel {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.statement {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 3em;
+  color: #2f2f2f;
+}
+.brand-statement {
+  background-color: #f8d6bc;
+  padding: 20px;
+}
+
+.adopted {
+  margin-bottom: 50px;
+  margin-top: 40px;
+  color: #2f2f2f;
+  float: left;
+  background-color: #f77b00;
+  color: white;
+  margin-left: 16px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 30px;
+}
+.make-a-difference {
+  margin-top: 100px;
+  height: 70vh;
+  position: relative;
+  text-align: center;
+}
+.title {
+  margin-top: 40px;
+
+  position: absolute;
+
+  font-size: 30px;
+
+  background-color: #f77b00;
+  color: white;
+  margin-left: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.home-links {
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  position: relative;
+  z-index: 90;
+  bottom: 600px;
+}
+.banner-two {
+  width: 100%;
+  height: auto;
+}
+.adopt {
+  font-size: 50px;
+}
+.dog-icon,
+.donate-icon {
+  margin-top: 10px;
+  color: white;
+}
+
+svg {
+  margin-top: 10px;
+
+  margin-bottom: 20px;
+}
+
+.container-link {
+  background-color: rgba(255, 155, 67, 0.892);
+
+  padding: 70px;
+  margin-top: 100px;
+  border-radius: 10%;
+}
+
+.svg-inline--fa.fa-donate {
+  margin-left: 10px;
+}
+
+.home-links :hover {
+  background-color: #f77b00;
+  border-radius: 0;
+  transition: 0.3s;
+  color: white;
+}

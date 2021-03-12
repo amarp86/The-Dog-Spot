@@ -8,7 +8,9 @@ export const signUp = async (credentials) => {
     const user = jwtDecode(resp.data.token);
     return user;
   } catch (error) {
-    throw error;
+    console.log(error.response.data);
+    //throw error;
+    return error.response.data;
   }
 };
 

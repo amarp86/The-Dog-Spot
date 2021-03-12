@@ -1,0 +1,53 @@
+.nav {
+  position: fixed;
+  width: 99.1%;
+  font-family: "Luckiest Guy", cursive;
+  min-height: 110px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(247, 124, 0, 0.906);
+  z-index: 99999;
+}
+
+.logo {
+  display: flex;
+
+  font-size: 40pt;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fefbf7;
+  margin-top: 55px;
+  margin-left: 25px;
+}
+
+.links {
+  min-height: min-content;
+
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 30px;
+}
+.links a {
+  text-decoration: none;
+  color: #383838;
+}
+
+.logo:hover {
+  color: #383838;
+  transition: 0.3s;
+}
+.links a:hover {
+  color: #fcf6ed;
+  transition: 0.3s;
+}
+.link {
+  padding: 15px;
+  font-size: 15pt;
+}
+
+.link-welcome {
+  color: #fcf6ed;
+  font-size: 20pt;
+  margin-bottom: 30px;
+  margin-left: 200px;
+}
