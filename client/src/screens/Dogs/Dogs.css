@@ -1,13 +1,21 @@
+.search-input {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 150px;
+  min-width: 500px;
+  min-height: 30px;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
 .all-dogs-area {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 5px;
   padding: 25px 15px;
-  /* overflow-y: scroll; */
-  /* height: 450px; */
   margin-bottom: 10px;
 }
 .each-dog {
