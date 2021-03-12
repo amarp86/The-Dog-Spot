@@ -59,11 +59,12 @@ button {
   padding: 1em;
   width: 50%;
   height: 80%;
-  margin: 4em auto;
-  border: 2px solid #b0bec5;
+  margin: 180px auto;
+  border: 2px solid #bcb8b1;
   border-radius: 6px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 2s ease;
+  background-color: #f8d6bc;
 }
 
 .form-container .danger {
@@ -329,4 +330,13 @@ button {
   grid-template-rows: auto;
   width: 80%;
   margin: 4em auto;
+}
+.password-error {
+  color: red;
+  text-align: center;
+}
+
+.email-error {
+  color: red;
+  text-align: center;
 }

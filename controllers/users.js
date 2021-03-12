@@ -11,22 +11,29 @@ const TOKEN_KEY = process.env.TOKEN_KEY || "4vq8756b786bq89cbfcq84rcrb";
 const signUp = async (req, res) => {
   try {
     const { name, email, password } = req.body;
-    const password_digest = await bcrypt.hash(password, parseInt(SALT_ROUNDS));
-    const user = new User({
-      name,
-      email,
-      password_digest,
-    });
+    if (await User.findOne({ email })) {
+      res.status(400).json("User Already Exists");
+    } else {
+      const password_digest = await bcrypt.hash(
+        password,
+        parseInt(SALT_ROUNDS)
+      );
+      const user = new User({
+        name,
+        email,
+        password_digest,
+      });
 
-    await user.save();
+      await user.save();
 
-    const payload = {
-      name: user.name,
-      email: user.email,
-    };
+      const payload = {
+        name: user.name,
+        email: user.email,
+      };
 
-    const token = jwt.sign(payload, TOKEN_KEY);
-    res.status(201).json({ token });
+      const token = jwt.sign(payload, TOKEN_KEY);
+      res.status(201).json({ token });
+    }
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -34,8 +41,9 @@ const signUp = async (req, res) => {
 
 const signIn = async (req, res) => {
   try {
-    const { name, password } = req.body;
-    const user = await User.findOne({ name: name });
+    const { email, password } = req.body;
+
+    const user = await User.findOne({ email: email });
     if (await bcrypt.compare(password, user.password_digest)) {
       const payload = {
         name: user.name,
