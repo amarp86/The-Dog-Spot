@@ -348,3 +348,13 @@ button {
 .sign-up-button:hover {
   box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.5);
 }
+
+.password-error {
+  color: red;
+  text-align: center;
+}
+
+.email-error {
+  color: red;
+  text-align: center;
+}
