@@ -38,3 +38,19 @@ a {
 .amar {
   padding: 15px;
 }
+
+@media screen and (max-width: 400px) {
+  .contributors a {
+    font-size: 13px;
+  }
+  .hanna,
+  .jason,
+  .amar {
+    padding: 0px;
+  }
+  .linkedin-image {
+    height: 15px;
+    padding: 0px 10px;
+    border-radius: 50%;
+  }
+}
