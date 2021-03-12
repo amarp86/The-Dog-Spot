@@ -2,7 +2,7 @@
   position: fixed;
   width: 99%;
   font-family: "Luckiest Guy", cursive;
-  min-height: 120px;
+  min-height: 110px;
   display: flex;
   flex-direction: row;
   background-color: rgba(247, 124, 0, 0.906);
@@ -42,12 +42,12 @@
 }
 .link {
   padding: 15px;
-  font-size: 20pt;
+  font-size: 15pt;
 }
 
 .link-welcome {
   color: #fcf6ed;
-  font-size: 25pt;
+  font-size: 20pt;
   margin-bottom: 30px;
   margin-left: 200px;
 }

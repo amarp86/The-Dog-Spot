@@ -8,6 +8,7 @@
   justify-content: space-around;
   flex-wrap: nowrap;
   background-color: #f77b00;
+  z-index: 999;
 }
 
 .linkedin-image {
@@ -26,7 +27,7 @@
 a {
   font-family: "Luckiest Guy", cursive;
   text-decoration: none;
-  font-size: 17pt;
+  font-size: 14pt;
   color: #383838;
 }
 .contributors a:hover {
