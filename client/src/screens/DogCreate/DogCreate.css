@@ -4,9 +4,10 @@
   width: 50%;
   height: 80%;
   margin: 150px auto;
-  border: 2px solid #b0bec5;
+  border: 2px solid #bcb8b1;
   border-radius: 6px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #f8d6bc;
 }
 
 .create-container h3 {
