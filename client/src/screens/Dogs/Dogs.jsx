@@ -16,7 +16,7 @@ function Dogs(props) {
   return (
     <div className="all-dogs-area">
       {allDogs.map((dog, index) => (
-        <div className="each-dog">
+        <div key={index} className="each-dog">
           <Dog key={index} dog={dog} />
         </div>
       ))}
