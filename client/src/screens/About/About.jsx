@@ -16,15 +16,17 @@ function About(props) {
       <div className="about-us">
         <p>
           The Dog Spot is and not-for-profit organization based in San Diego,
-          California and currently expanding to new heights. Our
-          organization was found by three individuals, Amar, Hanna, and Jason
-          whose beliefs are that shelter dogs deserve a second chance and be place in
-          loving homes. We team up with other local shelter organizations promoting their adopting dogs and through
-          programs with animal placement organizations. We are currently trying to reach out to more shelters throughout the United States. Our facility responds to
-          calls from the public to help keep our community safe and rescue
-          animals in need rescued. We have succesfully maintain a strong presence and
-          have proudly gained over a million supporters. We want these dogs to get a second chance in
-          happiness again.
+          California and currently expanding to new heights. Our organization
+          was found by three individuals, Amar, Hanna, and Jason whose beliefs
+          are that shelter dogs deserve a second chance and to help them be
+          placed in loving homes. We team up with local shelter organizations
+          promoting their adoptable dogs and through programs with animal
+          placement organizations. We are currently trying to reach out to more
+          shelters throughout the United States. Our facility responds to calls
+          from the public to help keep animals in need of rescue safe. We have
+          successfully maintained a strong presence in the animal world, all
+          while proudly gaining over one million supporters. We want these dogs
+          to get a second chance in lifelong happiness.
         </p>
       </div>
 
