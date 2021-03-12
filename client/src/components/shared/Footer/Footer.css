@@ -2,9 +2,10 @@
   position: absolute;
   bottom: 0;
   min-width: 100%;
-  min-height: 65px;
+  min-height: 75px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: nowrap;
   background-color: #f77b00;
 }
@@ -12,22 +13,28 @@
 .linkedin-image {
   height: 25px;
   padding: 0px 10px;
+  border-radius: 50%;
 }
 
 .contributors {
-  min-width: max-content;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 10px auto;
-  padding-top: 10px;
+
+  flex-wrap: wrap;
+  align-content: center;
 }
 a {
   font-family: "Luckiest Guy", cursive;
   text-decoration: none;
-  font-size: 15pt;
+  font-size: 17pt;
   color: #383838;
 }
 .contributors a:hover {
   color: #fcf6ed;
+}
+
+.hanna,
+.jason,
+.amar {
+  padding: 15px;
 }

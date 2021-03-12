@@ -1,0 +1,57 @@
+.about {
+  display: flex;
+
+  margin-top: 110px;
+  flex-direction: column;
+
+  background-color: #ffebda;
+}
+
+.about-banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.banner-image {
+  width: 100%;
+  z-index: -2;
+}
+
+h1 {
+  font-size: 80px;
+
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  background-color: #f77c00d7;
+  padding: 10px;
+}
+
+p {
+  font-size: 20px;
+
+  align-items: center;
+
+  line-height: 3em;
+  align-content: center;
+  font-weight: bold;
+  color: #2f2f2f;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about-us {
+  padding: 70px;
+  background-color: #f8d6bc;
+}
+
+.home-links {
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  position: relative;
+  z-index: 90;
+  bottom: 600px;
+}
