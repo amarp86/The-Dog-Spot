@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 25px;
+  width: 100%;
 }
 
 .adopt-buttons button {
@@ -22,18 +23,29 @@
   font-weight: bold;
 }
 
+#breed-facts p {
+  font-weight: normal;
+}
+
 .dog-detail-area {
   display: flex;
   flex-direction: column;
   margin: 50px;
+  align-items: center;
 }
 
 .details-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 80%;
   margin-top: 150px;
   flex-wrap: wrap;
+  padding: 50px 20px 20px 20px;
+  background-color: white;
+  border: solid 2px #bcb8b1;
+  border-radius: 6px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .details {
@@ -42,6 +54,7 @@
 
 .detail-image {
   height: 300px;
+  border-radius: 6px;
 }
 
 .edit-link {
@@ -54,6 +67,11 @@
   margin: 0 auto;
   line-height: 1.5;
   font-size: 18px;
+  font-weight: normal;
+}
+
+.breed-facts p {
+  color: red;
 }
 
 .dog-name {
@@ -86,4 +104,43 @@
   width: fit-content;
   background-color: #f77b00;
   font-family: "Luckiest Guy", cursive;
+}
+
+@media screen and (max-width: 600px) {
+  .detail-image {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .external-dog-temperment p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px auto;
+  }
+
+  .details-container {
+    margin-top: 200px;
+    width: 90%;
+  }
+
+  .detail-image {
+    height: 150px;
+  }
+
+  .details {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .adopt-buttons {
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adopt-buttons button {
+    margin-bottom: 10px;
+  }
 }
