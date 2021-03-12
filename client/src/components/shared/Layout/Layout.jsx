@@ -2,8 +2,7 @@ import React from "react";
 import "./Layout.css";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
-import SideNav from "../SideNav/SideNav";
-import Burger from "../Burger/Burger";
+
 
 const Layout = (props) => (
   <div className="layout">
