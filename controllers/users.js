@@ -41,7 +41,6 @@ const signUp = async (req, res) => {
 
 const signIn = async (req, res) => {
   try {
-
     const { email, password } = req.body;
 
     const user = await User.findOne({ email: email });
@@ -49,7 +48,7 @@ const signIn = async (req, res) => {
       const payload = {
         name: user.name,
         email: user.email,
-      }; // payload still has name for NAV purposes
+      };
 
       const token = jwt.sign(payload, TOKEN_KEY);
       res.status(201).json({ token });
