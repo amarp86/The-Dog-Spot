@@ -32,11 +32,11 @@
 }
 
 .statement {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   margin-left: 50px;
   margin-right: 50px;
-  line-height: 2em;
+  line-height: 3em;
   color: #2f2f2f;
 }
 .brand-statement {
@@ -54,6 +54,7 @@
   margin-left: 16px;
   font-weight: bold;
   padding: 10px;
+  font-size: 50px;
 }
 .make-a-difference {
   margin-top: 100px;
@@ -66,7 +67,7 @@
 
   position: absolute;
 
-  font-size: 30px;
+  font-size: 50px;
 
   background-color: #f77b00;
   color: white;
