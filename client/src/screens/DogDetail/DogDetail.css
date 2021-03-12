@@ -18,6 +18,10 @@
   font-family: "Montserrat";
 }
 
+.adopted-status {
+  font-weight: bold;
+}
+
 .dog-detail-area {
   display: flex;
   flex-direction: column;
