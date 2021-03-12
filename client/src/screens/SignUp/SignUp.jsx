@@ -50,6 +50,9 @@ const SignUp = (props) => {
           {form.errorMsg}
         </button>
       );
+    }
+    if (password !== passwordConfirmation || !password) {
+      return <p className="password-error">Password's Do Not Match</p>;
     } else {
       return <button type="submit">Sign Up</button>;
     }

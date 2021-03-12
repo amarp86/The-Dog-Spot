@@ -330,3 +330,6 @@ button {
   width: 80%;
   margin: 4em auto;
 }
+.password-error {
+  text-align: center;
+}
