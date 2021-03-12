@@ -31,8 +31,14 @@
   text-decoration: none;
   color: #383838;
 }
+
+.logo:hover {
+  color: #383838;
+  transition: 0.3s;
+}
 .links a:hover {
   color: #fcf6ed;
+  transition: 0.3s;
 }
 .link {
   position: relative;
