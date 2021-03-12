@@ -1,3 +1,5 @@
 .item-image {
   cursor: pointer;
+  max-height: 375px;
+  min-height: 375px;
 }
