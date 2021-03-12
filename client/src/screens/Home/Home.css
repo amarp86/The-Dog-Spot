@@ -13,7 +13,7 @@
 }
 
 .headliner {
-  font-size: 80px;
+  font-size: 60px;
 
   position: absolute;
   bottom: 100px;
@@ -32,7 +32,7 @@
 }
 
 .statement {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   margin-left: 50px;
   margin-right: 50px;
@@ -54,7 +54,7 @@
   margin-left: 16px;
   font-weight: bold;
   padding: 10px;
-  font-size: 50px;
+  font-size: 30px;
 }
 .make-a-difference {
   margin-top: 100px;
@@ -67,7 +67,7 @@
 
   position: absolute;
 
-  font-size: 50px;
+  font-size: 30px;
 
   background-color: #f77b00;
   color: white;
@@ -106,8 +106,8 @@ svg {
 .container-link {
   background-color: rgba(255, 155, 67, 0.892);
 
-  padding: 100px;
-  margin-bottom: 20px;
+  padding: 70px;
+  margin-top: 100px;
   border-radius: 10%;
 }
 
