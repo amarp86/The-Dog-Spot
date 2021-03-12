@@ -51,3 +51,9 @@
   margin-bottom: 30px;
   margin-left: 200px;
 }
+
+@media (max-width: 1024px) {
+  .link {
+    display: none;
+  }
+}
