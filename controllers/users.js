@@ -41,11 +41,11 @@ const signUp = async (req, res) => {
 
 const signIn = async (req, res) => {
   try {
-    const { name, password } = req.body;
-    const user = await User.findOne({ name: name });
+    const { email, password } = req.body;
+    const user = await User.findOne({ email: email });
     if (await bcrypt.compare(password, user.password_digest)) {
       const payload = {
-        name: user.name,
+        // name: user.name,
         email: user.email,
       };
 
