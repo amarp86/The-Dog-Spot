@@ -33,6 +33,7 @@
   margin: 1em auto;
   background: #f77b00;
   border: none;
+  padding: 5px;
 }
 
 .submit-button:hover {
