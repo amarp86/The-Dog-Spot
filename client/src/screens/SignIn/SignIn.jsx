@@ -7,7 +7,7 @@ const SignIn = (props) => {
   const history = useHistory();
 
   const [form, setForm] = useState({
-    name: "",
+    // name: "",
     email: "",
     password: "",
     isError: false,
@@ -36,7 +36,7 @@ const SignIn = (props) => {
         setForm({
           isError: true,
           errorMsg: "Invalid Credentials",
-          name: "",
+          // name: "",
           password: "",
         });
       });
@@ -50,12 +50,16 @@ const SignIn = (props) => {
           {form.errorMsg}
         </button>
       );
+    } else if (!password) {
+      return <p className="password-error">Please Enter Password</p>;
+    } else if (email.includes("@") !== true) {
+      return <p className="email-error">Invalid Email - must include @</p>;
     } else {
       return <button type="submit">Sign In</button>;
     }
   };
 
-  const { name, password, email } = form;
+  const { password, email } = form;
 
   const handleSignUp = () => {
     history.push("/sign-up");
@@ -65,7 +69,7 @@ const SignIn = (props) => {
     <div className="form-container">
       <h3>Sign In</h3>
       <form onSubmit={onSignIn}>
-        <label>Name</label>
+        {/* <label>Name</label>
         <input
           required
           type="text"
@@ -73,7 +77,7 @@ const SignIn = (props) => {
           value={name}
           placeholder="Enter Name"
           onChange={handleChange}
-        />
+        /> */}
         <label>E-Mail</label>
         <input
           required
