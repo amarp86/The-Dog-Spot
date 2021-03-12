@@ -1,0 +1,53 @@
+.donate-area {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffebda;
+  margin-top: 100px;
+}
+.donate-image {
+  position: relative;
+}
+.donate-banner {
+  overflow: hidden;
+
+  margin-top: -200px;
+  width: 100%;
+  margin-bottom: -180px;
+}
+
+.donate-title {
+  position: absolute;
+  left: 16px;
+
+  padding: 10px;
+
+  z-index: 200;
+  font-size: 25px;
+  background-color: #f77c00d7;
+  color: white;
+}
+
+.donate-container {
+  margin-top: 200px;
+  z-index: 2;
+}
+
+.donate-links a {
+  font-size: 30px;
+  line-height: 2em;
+}
+
+.donate-links {
+  background-color: #f8d6bc;
+  text-align: center;
+}
+
+.thank-you {
+  font-size: 20px;
+
+  margin-left: 16px;
+  color: white;
+  background-color: #f77c00d7;
+  float: left;
+  padding: 10px;
+}

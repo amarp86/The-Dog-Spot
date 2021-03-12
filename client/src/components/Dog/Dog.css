@@ -2,8 +2,9 @@
   height: 250px;
   width: 350px;
   margin: 0 auto;
+  border-radius: 20px;
 }
 
 .dog-name {
-  margin: 5px auto;
+  margin: 15px auto;
 }
