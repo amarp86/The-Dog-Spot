@@ -15,7 +15,7 @@ display: flex;
 z-index: 9999;
 display: none;
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;

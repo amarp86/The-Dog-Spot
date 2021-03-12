@@ -3,7 +3,6 @@ import "./Nav.css";
 import { NavLink } from "react-router-dom";
 import Burger from "../Burger/Burger";
 import { useState } from "react";
-import SideNav from "../SideNav/SideNav";
 
 
 const authenticatedOptions = (
