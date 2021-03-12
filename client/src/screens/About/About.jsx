@@ -17,7 +17,7 @@ function About(props) {
         <p>
           The Dog Spot is and not-for-profit organization based in San Diego,
           California and currently expanding to new heights. Our organization
-          was found by three individuals, Amar, Hanna, and Jason whose beliefs
+          was found by three individuals: Amar, Hanna, and Jason whose beliefs
           are that shelter dogs deserve a second chance and to help them be
           placed in loving homes. We team up with local shelter organizations
           promoting their adoptable dogs and through programs with animal
