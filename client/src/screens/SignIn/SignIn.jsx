@@ -66,7 +66,7 @@ const SignIn = (props) => {
   };
 
   return (
-    <div className="form-container">
+    <div className="sign-in-form-container">
       <h3>Sign In</h3>
       <form onSubmit={onSignIn}>
         {/* <label>Name</label>
@@ -80,6 +80,7 @@ const SignIn = (props) => {
         /> */}
         <label>E-Mail</label>
         <input
+          className="sign-in-input"
           required
           name="email"
           value={email}
@@ -89,6 +90,7 @@ const SignIn = (props) => {
         />
         <label>Password</label>
         <input
+          className="sign-in-input"
           required
           name="password"
           value={password}

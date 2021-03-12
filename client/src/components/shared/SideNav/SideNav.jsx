@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-const Side = styled.div`
-  
-  background-color: orange;
-    z-index:9999;
+const Side = styled.nav`
+  background-color: #f77b00;
+   
   .nav-link:hover
-   {
-    color: white;
-  }
+  padding-left:0;
+  margin: 0 auto;
+   
+  
   .welcome{
     margin-left:0;
+ 
    
     
 
@@ -24,20 +25,27 @@ const Side = styled.div`
     padding:10px;
     padding-top:35px;
     margin: 0 auto;
+   
+
 
   }
-nav-link.a{
-  font-size: 300px;
-}
-.nav-links{
+
+.nav-links,
+.welcome{
   display: flex;
   flex-direction: column;
 margin-top:100px;
   flex-wrap: wrap;
   align-content: center;
+  padding-left:0
 }
 
+a.nav-link:hover{
+  color: white;
 }
+
+
+
   
 
  
@@ -46,18 +54,16 @@ margin-top:100px;
       position: fixed;
       
       height: 100vh;
-      z-index:9999;
-     
       
-
       top: 0;
       left: 0;
       right: 0;
       
-      transform: ${({ open }) =>
-        open ? `translateX(0%)` : `translateX(0%)`};
+      transform: ${({ open }) => (open ? `translateX(0%)` : `translateX(100%)`)};
       transition: 0.3s ease-in-out;
     }
+   
+  
   }
 `;
 const authenticatedOptions = (
@@ -68,7 +74,7 @@ const authenticatedOptions = (
     <NavLink className="nav-link" to="/sign-out">
       Sign Out
     </NavLink>
-    </>
+  </>
 );
 
 const unauthenticatedOptions = (
@@ -93,35 +99,25 @@ const alwaysOptions = (
     <NavLink className="nav-link" to="/donate">
       Donate
     </NavLink>
-    </>
+  </>
 );
-
-
-
-
 
 const SideNav = ({ user, open, burgerToggle }) => {
   return (
-    
-     <Side >
-      <div className="nav-links" >
+    <Side user={user} open={open} burgerToggle={burgerToggle}>
+      <ul className="nav-links">
+      
           {user && (
-            <div className="welcome">
+            <div className="link-welcome">
               Welcome, {user.name.toUpperCase()}
             </div>
           )}
-       {alwaysOptions}
+          {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
-        </div>
-         
-      </Side>
-      
+        
+      </ul>
+    </Side>
   );
 };
-
-
-
-
-
 
 export default SideNav;

@@ -63,7 +63,7 @@ const Nav = ({ user }) => {
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
         <Burger open={open} burgerToggle={burgerToggle} />
-        {/* <SideNav /> */}
+       
       </div>
      
      

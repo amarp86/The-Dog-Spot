@@ -52,8 +52,30 @@
   margin-left: 200px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 450px) {
   .link {
     display: none;
+  }
+  .link-welcome {
+    font-size: 18px;
+    margin: 0;
+    justify-content: right;
+    padding-left: 160px;
+  }
+
+  .logo {
+    font-size: 34px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .nav {
+    min-height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav {
+    position: absolute;
   }
 }
