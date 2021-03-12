@@ -94,10 +94,12 @@ const SignIn = (props) => {
         />
         {renderError()}
       </form>
-      <div className="instructions">Don't Have an Account? Sign Up Below:</div>
-      <button className="sign-up" onClick={handleSignUp}>
-        Sign Up
-      </button>
+      <div className="instructions">
+        Don't Have an Account? Sign Up Below:
+        <button className="sign-up-button" onClick={handleSignUp}>
+          Sign Up
+        </button>
+      </div>
     </div>
   );
 };

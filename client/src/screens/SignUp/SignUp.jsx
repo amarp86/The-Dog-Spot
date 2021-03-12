@@ -79,7 +79,7 @@ const SignUp = (props) => {
           type="email"
           name="email"
           value={email}
-          placeholder="Enter email"
+          placeholder="Enter Email"
           onChange={handleChange}
         />
         <label>Password</label>
