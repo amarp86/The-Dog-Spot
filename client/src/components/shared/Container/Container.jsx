@@ -12,14 +12,14 @@ function Container(props) {
     <div className="make-a-difference">
       <div className="title">You can make a difference</div>
       <div className="home-links">
-        <div className="container-link">
+        <div className="container-link" id="adopt">
           <Link to="/dogs">
             <div className="adopt">Adopt</div>
 
             <div className="dog-icon">{element}</div>
           </Link>
         </div>
-        <div className="container-link">
+        <div className="container-link" id="donate">
           <Link to="/donate">
             <div className="adopt"> Donate</div>
 
