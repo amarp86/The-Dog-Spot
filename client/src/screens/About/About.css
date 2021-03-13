@@ -1,27 +1,23 @@
 .about {
   display: flex;
-
   margin-top: 110px;
   flex-direction: column;
-
   background-color: #ffebda;
 }
 
 .about-banner {
+  background: url("http://www.aspca.org/sites/default/files/nyc-adoption-center-facebook.jpg")
+    no-repeat center center;
+  background-size: cover;
+  height: 500px;
   position: relative;
   text-align: center;
   color: white;
   margin-bottom: 100px;
 }
 
-.banner-image {
-  width: 100%;
-  z-index: -2;
-}
-
-h1 {
-  font-size: 80px;
-
+.about-banner h1 {
+  font-size: 8vw;
   position: absolute;
   bottom: 8px;
   left: 16px;
@@ -29,11 +25,9 @@ h1 {
   padding: 10px;
 }
 
-p {
+.about-us p {
   font-size: 20px;
-
   align-items: center;
-
   line-height: 3em;
   align-content: center;
   font-weight: bold;
@@ -47,13 +41,46 @@ p {
   background-color: #f8d6bc;
 }
 
-.home-links {
-  display: flex;
-  justify-content: space-around;
-  justify-self: center;
-  position: relative;
-  z-index: 90;
-  bottom: 600px;
+@media screen and (max-width: 680px) {
+  .about-us {
+    padding: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-us {
+    padding: 40px;
+  }
+
+  .about-us p {
+    margin: 0 25px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+  .about-banner {
+    height: 300px;
+  }
+
+  .about-banner h1 {
+    margin-bottom: 80px;
+  }
+
+  .about-us {
+    padding: 20px;
+  }
+
+  .about-us p {
+    margin: 0 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .about-banner h1 {
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (max-width: 400px) {

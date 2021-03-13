@@ -1,0 +1,144 @@
+.home-links {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90vh;
+}
+
+.adopt {
+  font-size: 50px;
+}
+
+.dog-icon,
+.donate-icon {
+  margin-top: 10px;
+  color: white;
+}
+
+.make-a-difference {
+  display: flex;
+  align-items: center;
+  background: url("https://d17fnq9dkz9hgj.cloudfront.net/uploads/2020/04/shelter-dog-cropped-1.jpg")
+    no-repeat center center;
+  background-size: cover;
+  margin-top: 100px;
+  padding-bottom: 40px;
+  height: 90vh;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+svg {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container-link {
+  background-color: rgba(255, 155, 67, 0.892);
+  padding: 80px;
+  margin-top: 80px;
+  border-radius: 10%;
+}
+
+.svg-inline--fa.fa-donate {
+  margin-left: 10px;
+}
+
+.home-links :hover {
+  background-color: #f77b00;
+  border-radius: 0;
+  transition: 0.3s;
+  color: white;
+}
+
+.title {
+  top: 25px;
+  position: absolute;
+  font-size: 30px;
+  background-color: #f77b00;
+  color: white;
+  margin-left: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .container-link {
+    padding: 40px;
+  }
+
+  .adopt {
+    font-size: 35px;
+  }
+
+  .fa-6x {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .make-a-difference {
+    flex-direction: column;
+  }
+
+  .home-links {
+    flex-direction: column;
+  }
+
+  .container-link {
+    margin-top: 45px;
+  }
+
+  .adopt {
+    font-size: 30px;
+  }
+
+  .fa-6x {
+    font-size: 3em;
+  }
+
+  #donate {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    width: 100%;
+    margin-left: 0;
+    font-size: 25px;
+  }
+
+  .home-links {
+    height: 80vh;
+  }
+
+  #adopt {
+    margin-top: 85px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .title {
+    width: 100%;
+    margin-left: 0;
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  .container-link {
+    padding: 15px;
+    margin-top: 0;
+  }
+
+  .adopt {
+    font-size: 20px;
+  }
+
+  .fa-6x {
+    font-size: 2em;
+  }
+}
