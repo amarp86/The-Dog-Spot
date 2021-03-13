@@ -47,7 +47,7 @@ display: none;
   }
 `;
 
-const Burger = ({  burgerToggle, open }) => {
+const Burger = ({ user, burgerToggle, open }) => {
   return (
     <>
       <StyleBurger open={open} onClick={burgerToggle}>
@@ -55,7 +55,7 @@ const Burger = ({  burgerToggle, open }) => {
         <div></div>
         <div></div>
         
-        <SideNav open={open}  onClick={burgerToggle} />
+        <SideNav user={user} open={open}  onClick={burgerToggle} />
       
       </StyleBurger>
  

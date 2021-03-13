@@ -134,7 +134,7 @@ svg {
 }
 @media screen and (max-width: 900px) {
   .home-area {
-    margin-top: 160px;
+    margin-top: 110px;
   }
   .headliner {
     font-size: 40px;
@@ -150,6 +150,12 @@ svg {
 }
 
 @media screen and (max-width: 400px) {
+  .home-area {
+    margin-top: 135px;
+  }
+  .statement {
+    line-height: 2em;
+  }
   .headliner {
     font-size: 30px;
     bottom: 1px;
@@ -180,16 +186,15 @@ svg {
   .container-link {
     margin: 0 auto;
     position: relative;
-    top: 680px;
-    margin-top: 10px;
+    top: 60px;
+    margin-top: 20px;
+    padding-bottom: 5px;
   }
   .banner-two {
-    margin-top: 68px;
-    float: left;
-    position: absolute;
-    width: auto;
-    height: 100%;
-    left: -200px;
-    padding-bottom: 50px;
+    width: 375px; /* width of container */
+    height: 100%; /* height of container */
+    object-fit: cover;
+    object-position: 30% 10%;
+    margin-top: 65px;
   }
 }

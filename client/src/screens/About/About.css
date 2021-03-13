@@ -55,3 +55,26 @@ p {
   z-index: 90;
   bottom: 600px;
 }
+
+@media screen and (max-width: 400px) {
+  .about-us {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  p {
+    margin: 10px 30px;
+  }
+  .banner-image {
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 30px;
+    top: 160px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    left: 0px;
+  }
+  .about-banner {
+    margin-bottom: 30px;
+  }
+}

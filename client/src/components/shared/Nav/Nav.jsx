@@ -61,7 +61,7 @@ const Nav = ({ user }) => {
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
-        <Burger open={open} burgerToggle={burgerToggle} />
+        <Burger user={user} open={open} burgerToggle={burgerToggle} />
        
       </div>
      
