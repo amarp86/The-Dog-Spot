@@ -44,7 +44,7 @@ const alwaysOptions = (
 );
 
 const Nav = ({ user }) => {
-  const paw = <FontAwesomeIcon className="paw" icon={faPaw} size="S" />
+  const paw = <FontAwesomeIcon className="paw" icon={faPaw}  />
   const [open, setOpen] = useState(false);
   const burgerToggle = () => {
     setOpen(!open);
