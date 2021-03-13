@@ -198,3 +198,9 @@ svg {
     margin-top: 65px;
   }
 }
+
+@media screen and (max-height: 751px) {
+  .container-link {
+    top: 80px;
+  }
+}
