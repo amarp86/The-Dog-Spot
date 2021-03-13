@@ -48,6 +48,7 @@ a.nav-link:hover{
   margin: 0 auto;
   padding-left:0px;
   color:white;
+  margin-top:50px;
 }
 
 

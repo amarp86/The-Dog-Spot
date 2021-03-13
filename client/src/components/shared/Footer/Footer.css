@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   min-width: 100%;
-  min-height: 75px;
+  min-height: 65px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

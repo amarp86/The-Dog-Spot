@@ -45,6 +45,9 @@
   .about-us {
     padding: 60px;
   }
+  h1.who-we-are {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -104,5 +107,11 @@
   }
   .about-banner {
     margin-bottom: 30px;
+  }
+  h1.who-we-are {
+    left: 0px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    margin-bottom: 0;
   }
 }
