@@ -43,13 +43,20 @@ margin-top:100px;
 a.nav-link:hover{
   color: white;
 }
+.links-welcome{
+  font-size:30px;
+  margin: 0 auto;
+  padding-left:0px;
+  color:white;
+  margin-top:50px;
+}
 
 
 
   
 
  
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 975px) {
     {
       position: fixed;
       
@@ -108,9 +115,9 @@ const SideNav = ({ user, open, burgerToggle }) => {
       <ul className="nav-links">
       
           {user && (
-            <div className="link-welcome">
+            <ul className="links-welcome">
               Welcome, {user.name.toUpperCase()}
-            </div>
+            </ul>
           )}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}

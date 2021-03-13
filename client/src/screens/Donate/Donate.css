@@ -51,3 +51,24 @@
   float: left;
   padding: 10px;
 }
+
+@media screen and (max-width: 405px) {
+  h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .donate-title {
+    left: 0;
+    top: 107px;
+  }
+  div.donate-links a {
+    left: 0;
+
+    font-size: 15px;
+  }
+  .thank-you {
+    margin-left: 0;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}

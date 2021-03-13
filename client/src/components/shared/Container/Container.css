@@ -1,7 +1,9 @@
 .home-links {
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
   position: absolute;
+  -webkit-justify-content: space-evenly;
   justify-content: space-evenly;
   width: 100%;
   height: 90vh;
@@ -9,6 +11,7 @@
 
 .adopt {
   font-size: 50px;
+  margin-top: 10px;
 }
 
 .dog-icon,
@@ -39,12 +42,8 @@ svg {
 .container-link {
   background-color: rgba(255, 155, 67, 0.892);
   padding: 80px;
-  margin-top: 80px;
-  border-radius: 10%;
-}
 
-.svg-inline--fa.fa-donate {
-  margin-left: 10px;
+  border-radius: 10%;
 }
 
 .home-links :hover {
@@ -58,13 +57,17 @@ svg {
   top: 25px;
   position: absolute;
   font-size: 30px;
-  background-color: #f77b00;
-  color: white;
   margin-left: 16px;
-  font-weight: bold;
+  font-weight: 700;
   padding: 10px;
+  background-color: #f77b00;
+  color: #fff;
 }
-
+@media screen and (max-width: 1046px) {
+  div.home-links {
+    top: 0;
+  }
+}
 @media screen and (max-width: 780px) {
   .container-link {
     padding: 40px;
@@ -73,23 +76,31 @@ svg {
   .adopt {
     font-size: 35px;
   }
+  .dog-icon,
+  .donate-icon {
+    margin-top: 0px;
+  }
+  .container-link {
+    height: 150px;
+  }
 
   .fa-6x {
     font-size: 4em;
   }
 }
+@media screen and (max-width: 700px) {
+  .container-link {
+    padding-bottom: 0px;
+    margin-top: 0;
+  }
+  .adopt {
+    margin-top: 0;
+  }
+}
 
 @media screen and (max-width: 600px) {
-  .make-a-difference {
-    flex-direction: column;
-  }
-
-  .home-links {
-    flex-direction: column;
-  }
-
   .container-link {
-    margin-top: 45px;
+    padding: 25px;
   }
 
   .adopt {
@@ -99,46 +110,24 @@ svg {
   .fa-6x {
     font-size: 3em;
   }
-
-  #donate {
-    margin-bottom: 50px;
-  }
 }
 
 @media screen and (max-width: 400px) {
   .title {
-    width: 100%;
+    width: 300px;
     margin-left: 0;
     font-size: 25px;
-  }
-
-  .home-links {
-    height: 80vh;
-  }
-
-  #adopt {
-    margin-top: 85px;
+    top: 0;
   }
 }
 
 @media screen and (max-width: 340px) {
-  .title {
-    width: 100%;
-    margin-left: 0;
-    font-size: 25px;
-    padding: 5px;
-  }
-
-  .container-link {
-    padding: 15px;
-    margin-top: 0;
-  }
-
   .adopt {
     font-size: 20px;
   }
 
   .fa-6x {
     font-size: 2em;
+    margin: 0 auto;
   }
 }

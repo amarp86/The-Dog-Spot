@@ -3,3 +3,10 @@
   max-height: 375px;
   min-height: 375px;
 }
+
+@media screen and (max-width: 400px) {
+  .item-image {
+    max-height: 255px;
+    min-height: 255px;
+  }
+}
