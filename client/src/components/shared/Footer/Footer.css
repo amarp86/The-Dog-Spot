@@ -40,6 +40,9 @@ a {
 }
 
 @media screen and (max-width: 400px) {
+  .footer-area {
+    margin-top: 100px;
+  }
   .contributors a {
     font-size: 13px;
   }

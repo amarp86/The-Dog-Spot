@@ -64,12 +64,11 @@ p {
   p {
     margin: 10px 30px;
   }
-  .banner-image {
-    margin-top: 20px;
-  }
+
   h1 {
     font-size: 30px;
-    top: 160px;
+    top: 140px;
+    bottom: 0;
     margin-bottom: 0px;
     margin-top: 0px;
     left: 0px;
