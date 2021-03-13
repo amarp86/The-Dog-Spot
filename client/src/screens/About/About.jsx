@@ -5,12 +5,7 @@ function About(props) {
   return (
     <div className="about">
       <div className="about-banner">
-        <img
-          className="banner-image"
-          src="http://www.aspca.org/sites/default/files/nyc-adoption-center-facebook.jpg"
-          alt="banner"
-        />
-        <h1>Who We Are.</h1>
+        <h1 className="who-we-are">Who We Are.</h1>
       </div>
 
       <div className="about-us">

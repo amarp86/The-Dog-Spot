@@ -1,0 +1,65 @@
+.home-links {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.adopt {
+  font-size: 50px;
+}
+
+.dog-icon,
+.donate-icon {
+  margin-top: 10px;
+  color: white;
+}
+
+.make-a-difference {
+  display: flex;
+  align-items: center;
+  background-image: url("https://d17fnq9dkz9hgj.cloudfront.net/uploads/2020/04/shelter-dog-cropped-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  padding-bottom: 40px;
+  height: 70vh;
+  position: relative;
+  text-align: center;
+}
+
+svg {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container-link {
+  background-color: rgba(255, 155, 67, 0.892);
+
+  padding: 80px;
+  margin-top: 80px;
+  border-radius: 10%;
+}
+
+.svg-inline--fa.fa-donate {
+  margin-left: 10px;
+}
+
+.home-links :hover {
+  background-color: #f77b00;
+  border-radius: 0;
+  transition: 0.3s;
+  color: white;
+}
+
+.title {
+  top: 15px;
+  position: absolute;
+  font-size: 30px;
+  background-color: #f77b00;
+  color: white;
+  margin-left: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
