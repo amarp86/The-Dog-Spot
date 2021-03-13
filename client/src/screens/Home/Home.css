@@ -56,3 +56,35 @@
   padding: 10px;
   font-size: 30px;
 }
+
+@media screen and (max-width: 840px) {
+  .headliner {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .headliner {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headliner {
+    font-size: 20px;
+  }
+
+  .home-banner-image {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+  .headliner {
+    font-size: 18px;
+  }
+
+  .home-banner-image {
+    padding-top: 80px;
+  }
+}
