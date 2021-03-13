@@ -3,6 +3,8 @@ import "./Nav.css";
 import { NavLink } from "react-router-dom";
 import Burger from "../Burger/Burger";
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaw } from '@fortawesome/free-solid-svg-icons'
 
 
 const authenticatedOptions = (
@@ -42,6 +44,7 @@ const alwaysOptions = (
 );
 
 const Nav = ({ user }) => {
+  const paw = <FontAwesomeIcon className="paw" icon={faPaw} size="S" />
   const [open, setOpen] = useState(false);
   const burgerToggle = () => {
     setOpen(!open);
@@ -51,6 +54,7 @@ const Nav = ({ user }) => {
       <div className="nav">
         <NavLink className="logo" to="/">
           THE DOG SPOT
+          {paw}
         </NavLink>
         <div className="links">
           {user && (

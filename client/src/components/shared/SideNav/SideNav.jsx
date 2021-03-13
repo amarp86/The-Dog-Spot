@@ -55,7 +55,7 @@ a.nav-link:hover{
   
 
  
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 975px) {
     {
       position: fixed;
       
