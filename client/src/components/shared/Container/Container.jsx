@@ -11,12 +11,6 @@ function Container(props) {
   return (
     <div className="make-a-difference">
       <div className="title">You can make a difference</div>
-      {/* <img
-        className="banner-two"
-        alt="baner"
-        src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2020/04/shelter-dog-cropped-1.jpg"
-      /> */}
-
       <div className="home-links">
         <div className="container-link">
           <Link to="/dogs">

@@ -1,6 +1,7 @@
 .home-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   position: absolute;
   width: 100%;
   margin-top: 40px;
@@ -54,7 +55,7 @@ svg {
 }
 
 .title {
-  top: 15px;
+  top: 25px;
   position: absolute;
   font-size: 30px;
   background-color: #f77b00;
@@ -62,4 +63,62 @@ svg {
   margin-left: 16px;
   font-weight: bold;
   padding: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .container-link {
+    padding: 40px;
+  }
+
+  .adopt {
+    font-size: 35px;
+  }
+
+  .fa-6x {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-link {
+    padding: 25px;
+  }
+
+  .adopt {
+    font-size: 30px;
+  }
+
+  .fa-6x {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    width: 100%;
+    margin-left: 0;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .title {
+    width: 100%;
+    margin-left: 0;
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  .container-link {
+    padding: 15px;
+    margin-top: 0;
+  }
+
+  .adopt {
+    font-size: 20px;
+  }
+
+  .fa-6x {
+    font-size: 2em;
+  }
 }
