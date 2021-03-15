@@ -66,18 +66,10 @@ const SignIn = (props) => {
   };
 
   return (
-    <div className="sign-in-form-container">
+    <div className={form.isError ? "sign-in-error": "sign-in-form-container"}>
       <h3>Sign In</h3>
       <form onSubmit={onSignIn}>
-        {/* <label>Name</label>
-        <input
-          required
-          type="text"
-          name="name"
-          value={name}
-          placeholder="Enter Name"
-          onChange={handleChange}
-        /> */}
+      
         <label>E-Mail</label>
         <input
           className="sign-in-input"
