@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, Link, useHistory } from "react-router-dom";
 import { getDog, unAdoptDog, adoptDog } from "../../services/dogs.js";
 import "./DogDetail.css";
+import adopted from "../../images/transpBackgroundAdopted.png";
 
 import axios from "axios";
 
@@ -95,9 +96,13 @@ function DogDetail(props) {
               {dog.description}
             </div>
             <div className="adopted-status">
-              {dog.isAdopted === true
-                ? `${dog.name} has been adopted!`
-                : `${dog.name} is available for adoption!`}
+              {dog.isAdopted === true ? (
+                <div className="adopted-div">
+                  <img src={adopted} className="stamp" alt="stamped" />
+                </div>
+              ) : (
+                `${dog.name} is available for adoption!`
+              )}
             </div>
           </div>
         </div>
@@ -122,6 +127,7 @@ function DogDetail(props) {
       <div className="dog-detail-area">
         <div className="details-container">
           <img className="detail-image" src={dog.images} alt="dog" />
+
           <div className="details">
             <div className="dog-name">{dog.name}</div>
             <div className="dog-age">
