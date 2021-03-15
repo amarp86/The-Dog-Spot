@@ -45,6 +45,9 @@
   .about-us {
     padding: 60px;
   }
+  h1.who-we-are {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -80,5 +83,35 @@
 @media screen and (max-width: 300px) {
   .about-banner h1 {
     margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-us {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  p {
+    margin: 10px 30px;
+    line-height: 2em;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+    top: 140px;
+    bottom: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    left: 0px;
+  }
+  .about-banner {
+    margin-bottom: 30px;
+  }
+  h1.who-we-are {
+    left: 0px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    margin-bottom: 0;
   }
 }

@@ -8,14 +8,14 @@ const StyleBurger = styled.div`
 width: 2rem;
 height: 2rem;
 position: fixed;
-top: 15px;
+top: 20px;
 right: 20px;
 display: flex;
 
 z-index: 9999;
 display: none;
 
-@media (max-width: 900px) {
+@media (max-width: 975px) {
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -25,7 +25,7 @@ display: none;
 
   div {
     width: 2rem;
-    height: 0.25rem;
+    height: 0.35rem;
     background-color: ${({ open }) => `white`};
     border-radius: 10px;
     transform-origin: 1px;
@@ -47,7 +47,7 @@ display: none;
   }
 `;
 
-const Burger = ({  burgerToggle, open }) => {
+const Burger = ({ user, burgerToggle, open }) => {
   return (
     <>
       <StyleBurger open={open} onClick={burgerToggle}>
@@ -55,7 +55,7 @@ const Burger = ({  burgerToggle, open }) => {
         <div></div>
         <div></div>
         
-        <SideNav open={open}  onClick={burgerToggle} />
+        <SideNav user={user} open={open}  onClick={burgerToggle} />
       
       </StyleBurger>
  

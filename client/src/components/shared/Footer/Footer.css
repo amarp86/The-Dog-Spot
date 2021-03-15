@@ -1,8 +1,8 @@
 .footer-area {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   min-width: 100%;
-  min-height: 75px;
+  min-height: 65px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -37,4 +37,23 @@ a {
 .jason,
 .amar {
   padding: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  .footer-area {
+    margin-top: 100px;
+  }
+  .contributors a {
+    font-size: 13px;
+  }
+  .hanna,
+  .jason,
+  .amar {
+    padding: 0px;
+  }
+  .linkedin-image {
+    height: 15px;
+    padding: 0px 10px;
+    border-radius: 50%;
+  }
 }
