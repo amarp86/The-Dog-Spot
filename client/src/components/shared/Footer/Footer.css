@@ -39,7 +39,7 @@ a {
   padding: 15px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 590px) {
   .footer-area {
     margin-top: 100px;
   }
@@ -57,6 +57,11 @@ a {
     border-radius: 50%;
   }
 }
+/* @media screen and (min-width: 401px) and (max-width: 599px) {
+  .footer-area {
+    margin-top: 100px;
+  }
+} */
 
 @media screen and (max-width: 360px) and (max-height: 640px) {
   div.contributors {

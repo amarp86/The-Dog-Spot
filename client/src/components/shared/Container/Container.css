@@ -42,8 +42,12 @@ svg {
 .container-link {
   background-color: rgba(255, 155, 67, 0.892);
   padding: 80px;
-
+  height: fit-content;
+  /* width: fit-content; */
   border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .home-links :hover {
@@ -138,7 +142,7 @@ svg {
     padding: 25px;
     margin-top: 0;
   }
-  
+
   .adopt {
     font-size: 20px;
   }
