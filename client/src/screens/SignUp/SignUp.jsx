@@ -26,19 +26,16 @@ const SignUp = (props) => {
     const { setUser } = props;
 
     signUp(form)
-      // .then(() => signIn(form))
       .then((user) => {
-        //console.log("this is the user 1 " + user);
         if (user === "User Already Exists") {
           alert("User Already Exists, Please try Another Email");
           history.push("/sign-up");
         } else {
-          //console.log("this is the user 3 " + user);
           setUser(user);
           history.push("/");
         }
       })
-      // .then(() => history.push("/"))
+
       .catch((error) => {
         console.error(error);
         setForm({
