@@ -296,6 +296,7 @@
   color: red;
   text-align: center;
 }
+
 @media screen and (max-width: 890px) {
   .sign-up-form-container {
     margin-top: 250px;

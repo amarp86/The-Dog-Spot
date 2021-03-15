@@ -291,6 +291,13 @@
   margin-top: 10px;
   border: none;
   background-color: #f77b00;
+  padding-top: 15px;
+  font-family: "Luckiest Guy", cursive;
+}
+button {
+  font-family: "Luckiest Guy", cursive;
+  padding: 10px;
+  padding-top: 15px;
 }
 
 .sign-up-button:hover {
