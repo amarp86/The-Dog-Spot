@@ -113,6 +113,11 @@ svg {
 }
 
 @media screen and (max-width: 400px) {
+  .container-link {
+    padding: 30px;
+    margin-top: 0;
+  }
+
   .title {
     width: 300px;
     margin-left: 0;
@@ -122,6 +127,18 @@ svg {
 }
 
 @media screen and (max-width: 340px) {
+  .title {
+    width: 100%;
+    margin-left: 0;
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  .container-link {
+    padding: 25px;
+    margin-top: 0;
+  }
+  
   .adopt {
     font-size: 20px;
   }
