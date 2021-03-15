@@ -114,6 +114,9 @@ svg {
   .fa-6x {
     font-size: 3em;
   }
+  .title {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -125,7 +128,15 @@ svg {
   .title {
     width: 300px;
     margin-left: 0;
-    font-size: 25px;
+    font-size: 27px;
+    top: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .title {
+    width: 300px;
+    margin-left: 0;
+    font-size: 24px;
     top: 0;
   }
 }

@@ -64,7 +64,7 @@
   }
 
   .donate-container {
-    margin: 230px auto 0 auto;
+    margin: 220px auto 0 auto;
   }
 
   .donate-links a {
@@ -100,7 +100,7 @@
   }
 }
 
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 540px) {
   h2 {
     font-size: 20px;
     margin: 0;
@@ -117,5 +117,12 @@
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  h2 {
+    font-size: 17px;
+    margin: 0;
   }
 }
