@@ -367,9 +367,9 @@ button {
 .sign-in-error {
   align-self: center;
   padding: 1em;
-  width: 70%;
+  width: 50%;
   height: 80%;
-  margin-top: 245px;
+  margin-top: 150px;
   border: 2px solid #bcb8b1;
   border-radius: 6px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
