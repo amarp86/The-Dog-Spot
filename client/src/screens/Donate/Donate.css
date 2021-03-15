@@ -38,7 +38,7 @@
 }
 
 .donate-links a {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 2em;
   padding: 15px;
 }
@@ -109,9 +109,7 @@
     left: 0;
     top: 107px;
   }
-  div.donate-links a {
-    left: 0;
-
+  .donate-links a {
     font-size: 15px;
   }
   .thank-you {
