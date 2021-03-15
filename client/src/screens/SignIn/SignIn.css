@@ -378,14 +378,16 @@ button {
 }
 
 @media screen and (max-width: 890px) {
-  .sign-in-form-container {
+  .sign-in-form-container,
+  .sign-in-error {
     margin-top: 250px;
     width: 70%;
   }
 }
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
-  .sign-in-form-container form input {
+  .sign-in-form-container form input,
+  .sign-in-error form input {
     width: 90%;
   }
 }
