@@ -16,6 +16,7 @@ async function sendEmail(email) {
     to: `${email}`,
     subject: "Welcome to The Dog Spot",
     text: "Thank You for Signing Up at The Dog Spot!",
+    html: "<b>Hello world?</b>",
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
