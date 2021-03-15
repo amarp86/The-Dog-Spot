@@ -59,7 +59,8 @@
   align-items: center;
 }
 
-.details-container {
+.details-container,
+.fetch {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -71,6 +72,13 @@
   border: solid 2px #bcb8b1;
   border-radius: 6px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.fetch {
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 200px;
+  padding: 50px;
 }
 
 .details {
