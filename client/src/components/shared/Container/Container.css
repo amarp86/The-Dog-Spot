@@ -2,7 +2,6 @@
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  position: absolute;
   -webkit-justify-content: space-evenly;
   justify-content: space-evenly;
   width: 100%;
@@ -43,7 +42,6 @@ svg {
   background-color: rgba(255, 155, 67, 0.892);
   padding: 80px;
   height: fit-content;
-  /* width: fit-content; */
   border-radius: 10%;
   justify-content: center;
   align-items: center;
@@ -92,19 +90,13 @@ svg {
     font-size: 4em;
   }
 }
-@media screen and (max-width: 700px) {
-  .container-link {
-    padding-bottom: 0px;
-    margin-top: 0;
-  }
-  .adopt {
-    margin-top: 0;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .container-link {
-    padding: 25px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 5px;
   }
 
   .adopt {
@@ -113,6 +105,51 @@ svg {
 
   .fa-6x {
     font-size: 3em;
+  }
+  .title {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .container-link {
+    padding-bottom: 50px;
+    margin-top: 0px;
+    height: fit-content;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-link {
+    margin-top: 300px;
+    padding: 40px;
+  }
+  .adopt {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container-link {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  #adopt {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container-link {
+    height: fit-content;
+  }
+
+  #donate {
+    margin-bottom: 100px;
   }
 }
 
@@ -125,7 +162,15 @@ svg {
   .title {
     width: 300px;
     margin-left: 0;
-    font-size: 25px;
+    font-size: 27px;
+    top: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .title {
+    width: 300px;
+    margin-left: 0;
+    font-size: 24px;
     top: 0;
   }
 }

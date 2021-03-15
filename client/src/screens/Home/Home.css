@@ -73,30 +73,11 @@
   .headliner {
     font-size: 20px;
   }
-
-  .home-banner-image {
-    padding-top: 50px;
-  }
 }
 
 @media screen and (max-width: 480px) and (min-width: 300px) {
   .headliner {
     font-size: 18px;
-  }
-
-  .home-banner-image {
-    padding-top: 80px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .container-link {
-    padding: 60px;
-    margin-top: 150px;
-  }
-
-  .adopt {
-    font-size: 50px;
   }
 }
 
@@ -110,6 +91,9 @@
     height: 210px;
     width: 150px;
   }
+  .headliner {
+    bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -120,13 +104,7 @@
     font-size: 40px;
     bottom: 45px;
   }
-  .container-link {
-    margin-top: 300px;
-    padding: 40px;
-  }
-  .adopt {
-    font-size: 30px;
-  }
+
   div.home-links {
     bottom: 600px;
   }
@@ -143,13 +121,6 @@
     display: flex;
     flex-direction: column;
   }
-  .container-link {
-    margin: 0 auto;
-    position: relative;
-    top: 60px;
-    margin-top: 20px;
-    padding-bottom: 5px;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -162,7 +133,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 540px) {
   .home-area {
     margin-top: 110px;
   }
@@ -184,7 +155,6 @@
     margin-left: 0;
   }
   .title {
-    font-size: 30px;
     margin: 0;
     padding: 5px;
     text-align: left;
@@ -196,13 +166,7 @@
   .make-a-difference {
     margin: 0;
   }
-  .container-link {
-    margin: 0 auto;
-    position: relative;
-    top: 60px;
-    margin-top: 20px;
-    padding-bottom: 5px;
-  }
+
   .banner-two {
     width: 375px; /* width of container */
     height: 100%; /* height of container */
@@ -215,17 +179,8 @@
   div.home-links {
     bottom: 500px;
   }
-}
-
-@media screen and (max-height: 751px) {
-  .container-link {
-    top: 80px;
-  }
-  .container-link {
-    margin: 0 auto;
-    position: relative;
-    top: 60px;
-    margin-top: 20px;
-    padding-bottom: 5px;
+  .headliner,
+  .adopted {
+    font-size: 25px;
   }
 }

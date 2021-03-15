@@ -26,6 +26,7 @@ svg.svg-inline--fa.fa-paw.fa-w-16.paw {
   color: #fefbf7;
   margin-top: 55px;
   margin-left: 25px;
+  transition: 200ms all;
 }
 
 .links {

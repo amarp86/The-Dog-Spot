@@ -51,7 +51,7 @@ function DogDetail(props) {
   }, [id, isUpdated]);
 
   if (!isLoaded) {
-    return <h1>Fetching...</h1>;
+    return <h1 className="details-container">Fetching...</h1>;
   }
 
   const handleAdopt = async (e) => {
