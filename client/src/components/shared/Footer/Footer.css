@@ -57,11 +57,6 @@ a {
     border-radius: 50%;
   }
 }
-/* @media screen and (min-width: 401px) and (max-width: 599px) {
-  .footer-area {
-    margin-top: 100px;
-  }
-} */
 
 @media screen and (max-width: 360px) and (max-height: 640px) {
   div.contributors {
@@ -69,7 +64,7 @@ a {
   }
 }
 
-@media screen and (max-width: 422px) and (max-height: 830px) {
+@media screen and (max-width: 573px) and (max-height: 830px) {
   .contributors a {
     font-size: 12pt;
   }
