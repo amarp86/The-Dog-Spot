@@ -39,7 +39,7 @@ a {
   padding: 15px;
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 600px) {
   .footer-area {
     margin-top: 100px;
   }
