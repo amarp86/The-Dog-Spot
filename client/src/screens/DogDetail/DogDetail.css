@@ -152,6 +152,10 @@
     margin: 20px auto;
   }
 
+  .stamp {
+    width: 70%;
+  }
+
   .details-container {
     margin-top: 150px;
     width: 90%;
