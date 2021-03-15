@@ -2,7 +2,6 @@
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  /* position: absolute; */
   -webkit-justify-content: space-evenly;
   justify-content: space-evenly;
   width: 100%;
