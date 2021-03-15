@@ -62,7 +62,11 @@ const SignUp = (props) => {
     } else if (email.includes("@") !== true) {
       return <p className="email-error">Invalid Email - must include @</p>;
     } else {
-      return <button className= "submit-button" type="submit">Sign Up</button>;
+      return (
+        <button className="submit-button" type="submit">
+          Sign Up
+        </button>
+      );
     }
   };
 
