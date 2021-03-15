@@ -27,6 +27,14 @@
   align-items: center;
   background-color: #f8d6bc;
 }
+
+.each-dog:hover {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  background-color: rgb(255, 247, 238);
+  transition: 0.3s;
+}
+
 @media screen and (max-width: 500px) {
   .search-input {
     width: 400px;
