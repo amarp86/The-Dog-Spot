@@ -2,11 +2,12 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
 const db = require("../db/connection");
+const nodeMailer = require("../nodemailer/nodemailer");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-const SALT_ROUNDS = process.env.SALT_ROUNDS || 11;
-const TOKEN_KEY = process.env.TOKEN_KEY || "4vq8756b786bq89cbfcq84rcrb";
+const SALT_ROUNDS = process.env.SALT_ROUNDS;
+const TOKEN_KEY = process.env.TOKEN_KEY;
 
 const signUp = async (req, res) => {
   try {
@@ -32,6 +33,9 @@ const signUp = async (req, res) => {
       };
 
       const token = jwt.sign(payload, TOKEN_KEY);
+
+      nodeMailer.sendEmail(email);
+
       res.status(201).json({ token });
     }
   } catch (error) {

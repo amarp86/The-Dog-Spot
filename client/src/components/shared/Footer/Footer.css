@@ -1,8 +1,8 @@
 .footer-area {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   min-width: 100%;
-  min-height: 75px;
+  min-height: 65px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -20,7 +20,6 @@
 .contributors {
   display: flex;
   flex-direction: row;
-
   flex-wrap: wrap;
   align-content: center;
 }
@@ -38,4 +37,46 @@ a {
 .jason,
 .amar {
   padding: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  .footer-area {
+    margin-top: 100px;
+  }
+  .contributors a {
+    font-size: 13px;
+  }
+  .hanna,
+  .jason,
+  .amar {
+    padding: 0px;
+  }
+  .linkedin-image {
+    height: 15px;
+    padding: 0px 10px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 360px) and (max-height: 640px) {
+  div.contributors {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 422px) and (max-height: 830px) {
+  .contributors a {
+    font-size: 12pt;
+  }
+  div.contributors {
+    justify-content: center;
+  }
+  .hanna,
+  .jason,
+  .amar {
+    padding: 0;
+  }
+  .linkedin-image {
+    height: 16px;
+  }
 }

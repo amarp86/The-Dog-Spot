@@ -56,68 +56,176 @@
   padding: 10px;
   font-size: 30px;
 }
-.make-a-difference {
-  margin-top: 100px;
-  height: 70vh;
-  position: relative;
-  text-align: center;
-}
-.title {
-  margin-top: 40px;
 
-  position: absolute;
-
-  font-size: 30px;
-
-  background-color: #f77b00;
-  color: white;
-  margin-left: 16px;
-  font-weight: bold;
-  padding: 10px;
+@media screen and (max-width: 840px) {
+  .headliner {
+    font-size: 40px;
+  }
 }
 
-.home-links {
-  display: flex;
-  justify-content: space-around;
-  justify-self: center;
-  position: relative;
-  z-index: 90;
-  bottom: 600px;
-}
-.banner-two {
-  width: 100%;
-  height: auto;
-}
-.adopt {
-  font-size: 50px;
-}
-.dog-icon,
-.donate-icon {
-  margin-top: 10px;
-  color: white;
+@media screen and (max-width: 650px) {
+  .headliner {
+    font-size: 25px;
+  }
 }
 
-svg {
-  margin-top: 10px;
+@media screen and (max-width: 600px) {
+  .headliner {
+    font-size: 20px;
+  }
 
-  margin-bottom: 20px;
+  .home-banner-image {
+    padding-top: 50px;
+  }
 }
 
-.container-link {
-  background-color: rgba(255, 155, 67, 0.892);
+@media screen and (max-width: 480px) and (min-width: 300px) {
+  .headliner {
+    font-size: 18px;
+  }
 
-  padding: 70px;
-  margin-top: 100px;
-  border-radius: 10%;
+  .home-banner-image {
+    padding-top: 80px;
+  }
 }
 
-.svg-inline--fa.fa-donate {
-  margin-left: 10px;
+@media screen and (max-width: 1200px) {
+  .container-link {
+    padding: 60px;
+    margin-top: 150px;
+  }
+
+  .adopt {
+    font-size: 50px;
+  }
 }
 
-.home-links :hover {
-  background-color: #f77b00;
-  border-radius: 0;
-  transition: 0.3s;
-  color: white;
+@media screen and (max-width: 1044px) {
+  div.home-links {
+    bottom: 400px;
+  }
+  .container-link {
+    padding-bottom: 50px;
+    margin-top: 0px;
+    height: 210px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-area {
+    margin-top: 110px;
+  }
+  .headliner {
+    font-size: 40px;
+    bottom: 45px;
+  }
+  .container-link {
+    margin-top: 300px;
+    padding: 40px;
+  }
+  .adopt {
+    font-size: 30px;
+  }
+  div.home-links {
+    bottom: 600px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .banner-two {
+    width: 605px; /* width of container */
+    height: 100%; /* height of container */
+    object-fit: cover;
+    object-position: 30% 10%;
+    margin-top: 65px;
+  }
+  .home-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-link {
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner-two {
+    width: 400px; /* width of container */
+    height: 100%; /* height of container */
+    object-fit: cover;
+    object-position: 30% 10%;
+    margin-top: 65px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-area {
+    margin-top: 110px;
+  }
+  .statement {
+    line-height: 2em;
+  }
+  .headliner {
+    font-size: 30px;
+    bottom: 1px;
+    left: 0;
+    padding: 5px;
+  }
+  .home-banner-image {
+    margin-bottom: 50px;
+  }
+  .adopted {
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .title {
+    font-size: 30px;
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+  }
+  .home-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .make-a-difference {
+    margin: 0;
+  }
+  .container-link {
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
+  .banner-two {
+    width: 375px; /* width of container */
+    height: 100%; /* height of container */
+    object-fit: cover;
+    object-position: 30% 10%;
+    margin-top: 65px;
+  }
+}
+@media screen and (max-width: 360px) {
+  div.home-links {
+    bottom: 500px;
+  }
+}
+
+@media screen and (max-height: 751px) {
+  .container-link {
+    top: 80px;
+  }
+  .container-link {
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
 }

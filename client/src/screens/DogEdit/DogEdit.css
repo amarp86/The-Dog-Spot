@@ -7,6 +7,7 @@
 
 .edit-dog-image {
   height: 300px;
+  border-radius: 6px;
 }
 
 .edit-input-image-link,
@@ -32,10 +33,22 @@
 }
 
 .save-button {
+  padding: 5px;
   width: fit-content;
   margin: 30px auto;
   background-color: #f77b00;
   color: white;
   border: none;
   font-size: 18px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 300px) {
+  .edit-dog-image {
+    height: 150px;
+    margin-top: 120px;
+  }
+
+  .edit-form {
+    width: 70%;
+  }
 }
