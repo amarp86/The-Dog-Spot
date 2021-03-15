@@ -24,9 +24,9 @@ async function sendEmail(email) {
       <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
     </head>
     <body>
-      <h1>Thank you for signing-up at The Dog Spot!"</h1>
-      <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80" alt="logo"/>
-      <h2>Sincerely, Hanna, Jason, Amar </h2>
+      <h1>Thank you for signing-up at The Dog Spot!</h1>
+      <img src="https://i.imgur.com/yqaZlST.png" alt="logo" height=60% width=60%/>
+      <h2>Sincerely,<br> Hanna, Jason, Amar </h2>
 
     </body>
   </html>`,
