@@ -57,3 +57,26 @@ a {
     border-radius: 50%;
   }
 }
+
+@media screen and (max-width: 360px) and (max-height: 640px) {
+  div.contributors {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 422px) and (max-height: 830px) {
+  .contributors a {
+    font-size: 12pt;
+  }
+  div.contributors {
+    justify-content: center;
+  }
+  .hanna,
+  .jason,
+  .amar {
+    padding: 0;
+  }
+  .linkedin-image {
+    height: 16px;
+  }
+}
