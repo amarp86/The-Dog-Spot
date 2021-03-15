@@ -34,6 +34,8 @@
   background: #f77b00;
   border: none;
   padding: 5px;
+  padding-top: 10px;
+  font-family: "Luckiest Guy", cursive;
 }
 
 .submit-button:hover {
