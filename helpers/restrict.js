@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const TOKEN_KEY = process.env.TOKEN_KEY || "4vq8756b786bq89cbfcq84rcrb";
+const TOKEN_KEY = process.env.TOKEN_KEY;
 
 const restrict = (req, res, next) => {
   try {
