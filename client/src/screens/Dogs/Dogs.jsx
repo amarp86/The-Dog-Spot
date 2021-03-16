@@ -25,6 +25,9 @@ function Dogs(props) {
   const handleSort = type => {
     setSortType(type)
     switch (type) {
+      case "null":
+        setQueriedDogs(queriedDogs)
+        break
       case "name-ascending":
         setQueriedDogs(AZ(queriedDogs))
         break
