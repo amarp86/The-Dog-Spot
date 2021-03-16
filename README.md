@@ -1,5 +1,7 @@
 # The-Dog-Spot
 
+[Deployed Site](https://the-dog-spot.netlify.app/)
+
 Creators: Hanna Boorom, Jason Quizhpi, Amar Patel
 
 Schema:
