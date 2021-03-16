@@ -7,7 +7,6 @@ const SignIn = (props) => {
   const history = useHistory();
 
   const [form, setForm] = useState({
-    // name: "",
     email: "",
     password: "",
     isError: false,
@@ -36,7 +35,6 @@ const SignIn = (props) => {
         setForm({
           isError: true,
           errorMsg: "Invalid Credentials",
-          // name: "",
           password: "",
         });
       });
