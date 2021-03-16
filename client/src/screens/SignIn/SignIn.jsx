@@ -7,7 +7,6 @@ const SignIn = (props) => {
   const history = useHistory();
 
   const [form, setForm] = useState({
-    // name: "",
     email: "",
     password: "",
     isError: false,
@@ -19,6 +18,10 @@ const SignIn = (props) => {
       ...form,
       [event.target.name]: event.target.value,
     });
+  };
+
+  const refresh = () => {
+    setForm({ isError: false, password: "", email: "" });
   };
 
   const onSignIn = (event) => {
@@ -35,10 +38,12 @@ const SignIn = (props) => {
         console.error(error);
         setForm({
           isError: true,
-          errorMsg: "Invalid Credentials",
-          // name: "",
+          errorMsg: "Invalid Credentials Try Again",
+
           password: "",
         });
+
+        setTimeout(refresh, 1986);
       });
   };
 
@@ -46,7 +51,7 @@ const SignIn = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button type="submit" className={toggleForm}>
+        <button type="submit" className={toggleForm} onClick={() => onSignIn}>
           {form.errorMsg}
         </button>
       );
@@ -66,10 +71,9 @@ const SignIn = (props) => {
   };
 
   return (
-    <div className={form.isError ? "sign-in-error": "sign-in-form-container"}>
+    <div className={form.isError ? "sign-in-error" : "sign-in-form-container"}>
       <h3>Sign In</h3>
       <form onSubmit={onSignIn}>
-      
         <label>E-Mail</label>
         <input
           className="sign-in-input"
