@@ -145,9 +145,13 @@ function DogDetail(props) {
               {dog.description}
             </div>
             <div className="adopted-status">
-              {dog.isAdopted === true
-                ? `${dog.name} has been adopted!`
-                : `${dog.name} is available for adoption!`}
+              {dog.isAdopted === true ? (
+                <div className="adopted-div">
+                  <img src={adopted} className="stamp" alt="stamped" />
+                </div>
+              ) : (
+                `${dog.name} is available for adoption!`
+              )}
             </div>
           </div>
         </div>
