@@ -1,5 +1,7 @@
 # The-Dog-Spot
 
+Creators: Hanna Boorom, Jason Quizhpi, Amar Patel
+
 Schema:
 
 ```
@@ -18,21 +20,28 @@ const Dog = new Schema(
     name: { type: String, required: true },
     breed: { type: String, required: true },
     age: { type: Number, required: true },
-    imgURL: [{ type: String, required: true }],
+    images: [],
     location: { type: String, required: true },
     description: { type: String, required: true },
-    isAdopted: { type: Boolean, required: true }
-
-
+    isAdopted: { type: Boolean, required: true, default: false },
   },
   { timestamps: true }
-)
+);
 
 
 ```
 
 Front-End Structure:
 ![Whimsical Diagram](https://github.com/amarp86/The-Dog-Spot/blob/dev/Screen%20Shot%202021-03-08%20at%201.57.32%20PM.png)
+
+Adobe XD Demos:
+![Front Page](https://github.com/amarp86/The-Dog-Spot/blob/dev/Adobe%20XD%20FrontPage.png)
+
+![Dog List](https://github.com/amarp86/The-Dog-Spot/blob/dev/AdobeXD%20Dog%20List.png)
+
+![Dog Detail](https://github.com/amarp86/The-Dog-Spot/blob/dev/AdobeXD%20Detail.png)
+
+![Sample Form](https://github.com/amarp86/The-Dog-Spot/blob/dev/AdobeXD%20Form.png)
 
 Team Expectations:
 [Google Doc Link](https://docs.google.com/document/d/e/2PACX-1vRJvBFhamLdhd8FuCzWC0053Q8ADoPnr4qJiDSAVrL8B2Awl28F5DWS5smkcC5bglCkZc4lsrpLuKSA/pub)
@@ -49,6 +58,7 @@ MVP Board:
 
 Post MVP:
 
-1. Email System for Adopter
-2. External API call for Dog Breed Facts based on string matching Dog Breed Schema.
-3. Add multiple user roles - allow CRUD access depending on user role.
+1. Email System for Adopter - complete
+2. External API call for Dog Breed Facts based on string matching Dog Breed Schema. - complete
+3. Implement Sort and Search into Dog's List. - complete
+4. Add CSS Animation to adopted status. - complete
