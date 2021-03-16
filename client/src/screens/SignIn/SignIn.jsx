@@ -20,6 +20,10 @@ const SignIn = (props) => {
     });
   };
 
+  const refresh = () => {
+    setForm({ isError: false, password: "", email: "" });
+  };
+
   const onSignIn = (event) => {
     event.preventDefault();
 
@@ -34,11 +38,20 @@ const SignIn = (props) => {
         console.error(error);
         setForm({
           isError: true,
+<<<<<<< HEAD
           errorMsg: "Invalid Credentials",
+=======
+          errorMsg: "Invalid Credentials Try Again",
+
+>>>>>>> 138135370efcaa0fe3f8cfad4bdc93124b889cc9
           password: "",
          
         });
 
+<<<<<<< HEAD
+=======
+        setTimeout(refresh, 1500);
+>>>>>>> 138135370efcaa0fe3f8cfad4bdc93124b889cc9
       });
       
 
@@ -48,7 +61,7 @@ const SignIn = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button type="submit" className={toggleForm}>
+        <button type="submit" className={toggleForm} onClick={() => onSignIn}>
           {form.errorMsg}
         </button>
       
