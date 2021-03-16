@@ -7,28 +7,19 @@ const Side = styled.nav`
   .nav-link:hover
   padding-left:0;
   margin: 0 auto;
-   
   
   .welcome{
     margin-left:0;
- 
-   
-    
+   }
 
-  }
-
-  a.nav-link{
- 
+  a.nav-link{ 
     font-size: 30px;
     align-items: center;
     transition: all ease-in-out 250ms;
     padding:10px;
     padding-top:35px;
     margin: 0 auto;
-   
-
-
-  }
+    }
 
 .nav-links,
 .welcome{
@@ -50,11 +41,6 @@ a.nav-link:hover{
   color:white;
   margin-top:50px;
 }
-
-
-
-  
-
  
   @media screen and (max-width: 975px) {
     {
@@ -66,7 +52,8 @@ a.nav-link:hover{
       left: 0;
       right: 0;
       
-      transform: ${({ open }) => (open ? `translateX(0%)` : `translateX(100%)`)};
+      transform: ${({ open }) =>
+        open ? `translateX(0%)` : `translateX(100%)`};
       transition: 0.3s ease-in-out;
     }
    
@@ -113,15 +100,11 @@ const SideNav = ({ user, open, burgerToggle }) => {
   return (
     <Side user={user} open={open} burgerToggle={burgerToggle}>
       <ul className="nav-links">
-      
-          {user && (
-            <ul className="links-welcome">
-              Welcome, {user.name.toUpperCase()}
-            </ul>
-          )}
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
-        
+        {user && (
+          <ul className="links-welcome">Welcome, {user.name.toUpperCase()}</ul>
+        )}
+        {alwaysOptions}
+        {user ? authenticatedOptions : unauthenticatedOptions}
       </ul>
     </Side>
   );
