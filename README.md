@@ -45,6 +45,8 @@ Adobe XD Demos:
 
 ![Sample Form](https://github.com/amarp86/The-Dog-Spot/blob/dev/AdobeXD%20Form.png)
 
+![Actual Frontpage](https://github.com/amarp86/The-Dog-Spot/blob/dev/app%20screenshot.png)
+
 App Overview:
 
 1. Web App for local animal shelters to list available dogs that are seeking permanent homes.
