@@ -39,6 +39,7 @@ const SignIn = (props) => {
          
         });
 
+        setTimeout(refresh, 1986);
       });
       
 
