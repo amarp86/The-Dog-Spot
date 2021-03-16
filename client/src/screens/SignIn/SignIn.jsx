@@ -35,13 +35,13 @@ const SignIn = (props) => {
         setForm({
           isError: true,
           errorMsg: "Invalid Credentials",
-<<<<<<< HEAD
-=======
-
->>>>>>> 4798b93a28562d561cdb9c9c4588d0215c5ab2c2
           password: "",
+         
         });
+
       });
+      
+
   };
 
   const renderError = () => {
@@ -51,6 +51,7 @@ const SignIn = (props) => {
         <button type="submit" className={toggleForm}>
           {form.errorMsg}
         </button>
+      
       );
     } else if (!password) {
       return <p className="password-error">Please Enter Password</p>;
