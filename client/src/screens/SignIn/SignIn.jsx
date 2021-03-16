@@ -43,7 +43,7 @@ const SignIn = (props) => {
           password: "",
         });
 
-        setTimeout(refresh, 1500);
+        setTimeout(refresh, 1986);
       });
   };
 
