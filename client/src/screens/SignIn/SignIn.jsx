@@ -19,6 +19,10 @@ const SignIn = (props) => {
       [event.target.name]: event.target.value,
     });
   };
+  const refresh = () => {
+    setForm({ isError: false, password: "", email: "" });
+  };
+
 
   const onSignIn = (event) => {
     event.preventDefault();
@@ -39,7 +43,7 @@ const SignIn = (props) => {
          
         });
 
-        setTimeout(refresh, 1986);
+        setTimeout(refresh, 1500);
       });
       
 
