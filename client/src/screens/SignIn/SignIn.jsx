@@ -35,6 +35,10 @@ const SignIn = (props) => {
         setForm({
           isError: true,
           errorMsg: "Invalid Credentials",
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4798b93a28562d561cdb9c9c4588d0215c5ab2c2
           password: "",
         });
       });
@@ -64,10 +68,9 @@ const SignIn = (props) => {
   };
 
   return (
-    <div className={form.isError ? "sign-in-error": "sign-in-form-container"}>
+    <div className={form.isError ? "sign-in-error" : "sign-in-form-container"}>
       <h3>Sign In</h3>
       <form onSubmit={onSignIn}>
-      
         <label>E-Mail</label>
         <input
           className="sign-in-input"
