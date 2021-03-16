@@ -45,6 +45,8 @@ Adobe XD Demos:
 
 ![Sample Form](https://github.com/amarp86/The-Dog-Spot/blob/dev/AdobeXD%20Form.png)
 
+Live FrontPage:
+
 ![Actual Frontpage](https://github.com/amarp86/The-Dog-Spot/blob/dev/app%20screenshot.png)
 
 App Overview:
